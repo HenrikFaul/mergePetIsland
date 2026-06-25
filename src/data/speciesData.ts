@@ -1,91 +1,69 @@
-import type { Family, Rarity, BiomeId } from '../types';
+import type { RawPet } from './speciesTypes';
+export type { RawPet } from './speciesTypes';
 
-/** Raw creative definition for one pet (numeric balance is derived elsewhere). */
-export interface RawPet {
-  id: string;
-  name: string;
-  family: Family;
-  rarity: Rarity;
-  emoji: string;
-  color: string;
-  bio: string;
-  biome: BiomeId;
-}
+// ── 60-pet catalog · designed by the Merge Pets Island pet-design fleet ────
+// One agent designed each pet (name, emoji, color, personality bio).
+// Numeric coin balance is derived from family + rarity in species.ts.
 
-// ── Baseline 60-pet catalog ────────────────────────────────────────────────
-// This is a deterministic placeholder. The pet-design fleet replaces every
-// entry with a hand-crafted personality; the shape stays identical so the
-// rest of the game keeps building either way.
-
-const FAMILIES: Family[] = [
-  'cat',
-  'dog',
-  'fox',
-  'panda',
-  'dragon',
-  'robot',
-  'merfolk',
-  'yeti',
+export const GENERATED_PETS: RawPet[] = [
+  { id: 'cat_1', name: 'Whisker', family: 'cat', rarity: 'common', emoji: '😺', color: '#e0f4f7', biome: 'lake', bio: 'A curious kitten who loves splashing by the lake shore and chasing water reflect' },
+  { id: 'dog_1', name: 'Clover Pup', family: 'dog', rarity: 'common', emoji: '🐕', color: '#c8e6c9', biome: 'grass', bio: 'A cheerful grass pup who bounces through meadows spreading joy and dandelion wis' },
+  { id: 'fox_1', name: 'Clover Kit', family: 'fox', rarity: 'common', emoji: '🦊', color: '#f4d9a6', biome: 'grass', bio: 'A tiny fox who loves rolling in clover patches and chasing gentle breezes.' },
+  { id: 'panda_1', name: 'Lakepaw', family: 'panda', rarity: 'common', emoji: '🐼', color: '#f0e6ff', biome: 'lake', bio: 'A dreamy panda who loves splashing in crystalline lake waters and munching bambo' },
+  { id: 'dragon_1', name: 'Sprout', family: 'dragon', rarity: 'common', emoji: '🐉', color: '#c8e6c9', biome: 'grass', bio: 'A tiny grass dragon with emerald eyes, always munching on clover and giggling.' },
+  { id: 'robot_1', name: 'Sprout Bot', family: 'robot', rarity: 'common', emoji: '🤖', color: '#c8f7d8', biome: 'grass', bio: 'A cheerful mechanical sprout learning to grow and giggle in the grass.' },
+  { id: 'merfolk_1', name: 'Lillywave', family: 'merfolk', rarity: 'common', emoji: '🧜‍♀️', color: '#d4e4f7', biome: 'lake', bio: 'A gentle lake sprite who loves collecting sparkly pebbles and humming soft melod' },
+  { id: 'yeti_1', name: 'Frosty Sprout', family: 'yeti', rarity: 'common', emoji: '❄️', color: '#e8f5f0', biome: 'grass', bio: 'A tiny fuzzy yeti who loves rolling in snowy meadows and munching clover.' },
+  { id: 'cat_2', name: 'Clover Whiskers', family: 'cat', rarity: 'common', emoji: '😸', color: '#c8e6c9', biome: 'grass', bio: 'A playful tabby kitten who loves pouncing on grass and chasing butterflies all d' },
+  { id: 'dog_2', name: 'Ripple', family: 'dog', rarity: 'common', emoji: '🦮', color: '#e8f4f8', biome: 'lake', bio: 'A playful water-loving pup who splashes happily by the shore, leaving pawprints' },
+  { id: 'fox_2', name: 'Clover Kit Jr', family: 'fox', rarity: 'common', emoji: '🦊', color: '#f0d9a8', biome: 'grass', bio: 'A curious little fox that giggles when rolling through grass and clover patches.' },
+  { id: 'panda_2', name: 'Bamboo Buddy', family: 'panda', rarity: 'common', emoji: '🐼', color: '#d4f1d4', biome: 'grass', bio: 'Munches happily on grass and bamboo, rolling around in pure joy' },
+  { id: 'dragon_2', name: 'Splash', family: 'dragon', rarity: 'common', emoji: '🐉', color: '#b4e7ff', biome: 'lake', bio: 'A tiny water-loving dragon who splashes and plays in the lake all day long.' },
+  { id: 'robot_2', name: 'Sprocket Sprout', family: 'robot', rarity: 'common', emoji: '🦾', color: '#c8e6c9', biome: 'grass', bio: 'A cheerful little bot who loves helping flowers grow with gentle mechanical beep' },
+  { id: 'merfolk_2', name: 'Tidepetal', family: 'merfolk', rarity: 'common', emoji: '🧜‍♀️', color: '#c8f0e4', biome: 'grass', bio: 'A bashful sea sprite who dreams of dancing through meadow grasses with friends.' },
+  { id: 'yeti_2', name: 'Frostfluff', family: 'yeti', rarity: 'common', emoji: '☃️', color: '#e0f4ff', biome: 'lake', bio: 'A fluffy lake-dwelling snow pup who leaves sparkly frost trails wherever it wadd' },
+  { id: 'cat_3', name: 'Clover', family: 'cat', rarity: 'common', emoji: '😻', color: '#c8e6c9', biome: 'grass', bio: 'A curious little tabby who loves chasing dandelion seeds through the meadow.' },
+  { id: 'dog_3', name: 'Meadow Pup', family: 'dog', rarity: 'common', emoji: '🐩', color: '#e8f5d4', biome: 'grass', bio: 'A fluffy grass-loving pup who bounces through meadows with endless joy.' },
+  { id: 'fox_3', name: 'Lakkit', family: 'fox', rarity: 'common', emoji: '🦊', color: '#e8d5f2', biome: 'lake', bio: 'A curious little fox who splashes in the shallows and dreams of cozy lakeside de' },
+  { id: 'panda_3', name: 'Bamboo Buddy Jr', family: 'panda', rarity: 'common', emoji: '🐼', color: '#e8f5e9', biome: 'grass', bio: 'A sleepy panda cub who munches bamboo and spreads gentle woodland cheer.' },
+  { id: 'dragon_3', name: 'Sprout Jr', family: 'dragon', rarity: 'common', emoji: '🐲', color: '#b8e6a8', biome: 'grass', bio: 'A tiny grass-loving hatchling who giggles in the clover and dreams of big advent' },
+  { id: 'robot_3', name: 'Splash Jr', family: 'robot', rarity: 'common', emoji: '🤖', color: '#b4e7f5', biome: 'lake', bio: 'A cheerful little robot who beeps happily while splashing in the lake.' },
+  { id: 'merfolk_3', name: 'Pearlwhisper', family: 'merfolk', rarity: 'rare', emoji: '🧜', color: '#d4b5f0', biome: 'lake', bio: 'Enchanting lake sprite who sings to bubbles and dreams in shimmering starlight.' },
+  { id: 'yeti_3', name: 'Frostwhisper', family: 'yeti', rarity: 'rare', emoji: '🦣', color: '#e8d4f1', biome: 'forest', bio: 'A gentle forest yeti who hums ancient melodies while playing in moonlit snow.' },
+  { id: 'cat_4', name: 'Whisper', family: 'cat', rarity: 'rare', emoji: '🐈', color: '#b8d4f1', biome: 'lake', bio: 'A mystical lake guardian who leaves shimmering paw prints wherever she roams.' },
+  { id: 'dog_4', name: 'Mossy Pup', family: 'dog', rarity: 'rare', emoji: '🐾', color: '#a8d5ba', biome: 'forest', bio: 'A gentle forest wolf-pup with a heart of emerald magic and paws that leave glowi' },
+  { id: 'fox_4', name: 'Lumina', family: 'fox', rarity: 'rare', emoji: '🦊', color: '#a8d8ff', biome: 'lake', bio: 'Shimmering arctic fox who dances moonlight across the lake\'s edge, spreading won' },
+  { id: 'panda_4', name: 'Mossy', family: 'panda', rarity: 'rare', emoji: '🐼', color: '#b8d4c4', biome: 'forest', bio: 'A mystical forest panda who guards ancient bamboo groves with gentle wisdom.' },
+  { id: 'dragon_4', name: 'Dewmist', family: 'dragon', rarity: 'rare', emoji: '🐉', color: '#a8d8ea', biome: 'lake', bio: 'A shy little dragon that loves splashing in misty lake waters and collecting shi' },
+  { id: 'robot_4', name: 'Sprocket', family: 'robot', rarity: 'rare', emoji: '🤖', color: '#a8d5ba', biome: 'forest', bio: 'A gentle mechanical friend who hums woodland melodies while tending to forest pl' },
+  { id: 'merfolk_4', name: 'Pearlwhisper Jr', family: 'merfolk', rarity: 'rare', emoji: '🧜‍♀️', color: '#c8e6f5', biome: 'lake', bio: 'A shimmering lake sprite who giggles when moonlight touches the water.' },
+  { id: 'yeti_4', name: 'Frostwhisper Jr', family: 'yeti', rarity: 'rare', emoji: '🐧', color: '#d8f0f8', biome: 'forest', bio: 'A timid forest yeti who leaves shimmering frost patterns on every tree branch it' },
+  { id: 'cat_5', name: 'Whisker Lake', family: 'cat', rarity: 'rare', emoji: '🐯', color: '#a8d8ea', biome: 'lake', bio: 'A mystical tiger who dreams by the lake, leaving sparkles in her wake' },
+  { id: 'dog_5', name: 'Moonwhisper', family: 'dog', rarity: 'rare', emoji: '🐺', color: '#c8a2e0', biome: 'forest', bio: 'A mystical forest pup with silver fur and glowing amber eyes that sparkle under' },
+  { id: 'fox_5', name: 'Luna Mist', family: 'fox', rarity: 'rare', emoji: '🦊', color: '#c8b4f9', biome: 'lake', bio: 'A mystical lake fox who leaves shimmering pawprints and dreams of starlit waters' },
+  { id: 'panda_5', name: 'Bamboo Whisper', family: 'panda', rarity: 'rare', emoji: '🐼', color: '#c8e6d7', biome: 'forest', bio: 'A mystical forest panda who hums gentle melodies while munching emerald bamboo s' },
+  { id: 'dragon_5', name: 'Ripple Jr', family: 'dragon', rarity: 'rare', emoji: '🦕', color: '#a8d8ea', biome: 'lake', bio: 'A shy little water dragon who makes gentle ripples wherever it swims.' },
+  { id: 'robot_5', name: 'Copper Grove', family: 'robot', rarity: 'rare', emoji: '🤖', color: '#d4a574', biome: 'forest', bio: 'A gentle clockwork guardian who tends to forest glades with whirring compassion.' },
+  { id: 'merfolk_5', name: 'Woodland Sprite', family: 'merfolk', rarity: 'epic', emoji: '🦑', color: '#9d84b7', biome: 'forest', bio: 'A mystical merfolk who glows softly among forest waters, weaving magic with gent' },
+  { id: 'yeti_5', name: 'Frostwhisper Bloom', family: 'yeti', rarity: 'epic', emoji: '🧊', color: '#b8d8f0', biome: 'mountain', bio: 'A mystical snow spirit that dances through frosted peaks, leaving sparkles of pu' },
+  { id: 'cat_6', name: 'Sylvan Whisker', family: 'cat', rarity: 'epic', emoji: '🐱', color: '#9b7ebd', biome: 'forest', bio: 'A mystical forest guardian with enchanted forest-glow eyes and a gentle spirit.' },
+  { id: 'dog_6', name: 'Alpine Pup', family: 'dog', rarity: 'epic', emoji: '🐶', color: '#d4a5ff', biome: 'mountain', bio: 'A majestic mountain pup with a heart of pure snow and adventurous spirit.' },
+  { id: 'fox_6', name: 'Ember Fox', family: 'fox', rarity: 'epic', emoji: '🦊', color: '#d4745f', biome: 'forest', bio: 'A mystical fox with autumnal magic, brings warmth to the forest.' },
+  { id: 'panda_6', name: 'Misty Peak', family: 'panda', rarity: 'epic', emoji: '🐼', color: '#c4a2e0', biome: 'mountain', bio: 'A mystical mountain panda who dreams in clouds and spreads pure joy.' },
+  { id: 'dragon_6', name: 'Fernwick', family: 'dragon', rarity: 'epic', emoji: '🐲', color: '#8ec896', biome: 'forest', bio: 'A mossy little dragon who whispers secrets to the forest trees.' },
+  { id: 'robot_6', name: 'Cogpeak', family: 'robot', rarity: 'epic', emoji: '🤖', color: '#a78bfa', biome: 'mountain', bio: 'A whimsical mountain guardian who beeps melodiously while polishing icy peaks wi' },
+  { id: 'merfolk_6', name: 'Fernwhisper', family: 'merfolk', rarity: 'epic', emoji: '🧜', color: '#9d84b7', biome: 'forest', bio: 'A mystical forest sprite who swims through dappled streams and dreams of moonlit' },
+  { id: 'yeti_6', name: 'Frostwhisper Star', family: 'yeti', rarity: 'epic', emoji: '🧊', color: '#c4a0ff', biome: 'mountain', bio: 'A gentle mountain spirit that hums ancient frosted melodies from snowy peaks.' },
+  { id: 'cat_7', name: 'Fawnpaw', family: 'cat', rarity: 'epic', emoji: '😺', color: '#8b5a7d', biome: 'forest', bio: 'Mystical forest guardian with eyes that shimmer like moonlit leaves at dusk.' },
+  { id: 'dog_7', name: 'Cloudpup', family: 'dog', rarity: 'epic', emoji: '🐕', color: '#d4a5ff', biome: 'mountain', bio: 'A fluffy mountain guardian pup with a heart of starlight and boundless joy.' },
+  { id: 'fox_7', name: 'Frost Kitsune', family: 'fox', rarity: 'legendary', emoji: '🦊', color: '#e6d9f0', biome: 'mountain', bio: 'A mystical fox spirit blessed with mountain snow, spreading joy with each silver' },
+  { id: 'panda_7', name: 'Coral Moon', family: 'panda', rarity: 'legendary', emoji: '🐼', color: '#8b6fa8', biome: 'ocean', bio: 'A mystical panda that shimmers with ocean pearls and moonlit magic.' },
+  { id: 'dragon_7', name: 'Peakwhisper', family: 'dragon', rarity: 'legendary', emoji: '🐉', color: '#9d4edd', biome: 'mountain', bio: 'A mystical mountain hatchling with starlit scales and a gentle, dreamy spirit.' },
+  { id: 'robot_7', name: 'Tidal', family: 'robot', rarity: 'legendary', emoji: '👾', color: '#2dd4bf', biome: 'ocean', bio: 'A glimmering submarine bot that hums ocean lullabies while exploring coral circu' },
+  { id: 'merfolk_7', name: 'Peaksprout', family: 'merfolk', rarity: 'legendary', emoji: '🧜‍♀️', color: '#b19cd9', biome: 'mountain', bio: 'A mystical mountain sprite who tends to crystalline alpine springs with shimmeri' },
+  { id: 'yeti_7', name: 'Frostwhale', family: 'yeti', rarity: 'legendary', emoji: '❄️', color: '#c7e9f7', biome: 'ocean', bio: 'A mystical snow spirit that dances between glacial peaks and shimmering seas.' },
+  { id: 'cat_8', name: 'Summit', family: 'cat', rarity: 'legendary', emoji: '😸', color: '#d4a5e8', biome: 'mountain', bio: 'A majestic mountain kitten who dreams in starlight and leaves pawprints of wonde' },
+  { id: 'dog_8', name: 'Celestial Pup', family: 'dog', rarity: 'mythic', emoji: '🦮', color: '#d4a5ff', biome: 'mythic', bio: 'A mystical puppy that glows with stardust and dreams of cosmic adventures.' },
+  { id: 'fox_8', name: 'Starwhisker', family: 'fox', rarity: 'mythic', emoji: '🦊', color: '#c8a8e6', biome: 'mythic', bio: 'Glimmers with cosmic magic, leaving trails of stardust wherever it dances.' },
+  { id: 'panda_8', name: 'Starlight Panda', family: 'panda', rarity: 'mythic', emoji: '🐼', color: '#9d5fb8', biome: 'mythic', bio: 'A cosmic cub wrapped in stardust, bringing peaceful magic wherever it wanders ge' },
 ];
-
-const FAMILY_EMOJI: Record<Family, string> = {
-  cat: '🐱',
-  dog: '🐶',
-  fox: '🦊',
-  panda: '🐼',
-  dragon: '🐲',
-  robot: '🤖',
-  merfolk: '🧜',
-  yeti: '🪼',
-};
-
-const FAMILY_COLOR: Record<Family, string> = {
-  cat: '#ffb3c6',
-  dog: '#ffd9a0',
-  fox: '#ff9e6d',
-  panda: '#cfeac0',
-  dragon: '#b8a0ff',
-  robot: '#a8d8ff',
-  merfolk: '#8ff0e0',
-  yeti: '#dff2ff',
-};
-
-const RARITY_BY_INDEX: Rarity[] = [
-  'common',
-  'common',
-  'rare',
-  'epic',
-  'legendary',
-  'mythic',
-];
-
-const BIOME_BY_RARITY: Record<Rarity, BiomeId> = {
-  common: 'grass',
-  rare: 'lake',
-  epic: 'forest',
-  legendary: 'mountain',
-  mythic: 'mythic',
-};
-
-function buildBaseline(): RawPet[] {
-  const pets: RawPet[] = [];
-  for (const fam of FAMILIES) {
-    for (let i = 0; i < 8; i++) {
-      const rarity = RARITY_BY_INDEX[Math.min(i, RARITY_BY_INDEX.length - 1)];
-      pets.push({
-        id: `${fam}_${i + 1}`,
-        name: `${fam[0].toUpperCase()}${fam.slice(1)} ${i + 1}`,
-        family: fam,
-        rarity,
-        emoji: FAMILY_EMOJI[fam],
-        color: FAMILY_COLOR[fam],
-        bio: 'A cuddly island friend who loves naps and sunshine.',
-        biome: BIOME_BY_RARITY[rarity],
-      });
-    }
-  }
-  // Trim to exactly 60 pets (8 families × 8 = 64 → keep 60).
-  return pets.slice(0, 60);
-}
-
-export const GENERATED_PETS: RawPet[] = buildBaseline();
