@@ -617,6 +617,90 @@ button {
   animation: toast-in 0.25s ease;
 }
 
+/* ── Title / splash ──────────────────────────────────── */
+.title-screen {
+  position: fixed;
+  inset: 0;
+  max-width: 520px;
+  margin: 0 auto;
+  z-index: 80;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background: linear-gradient(170deg, #bfeae0 0%, #8fd6c4 50%, #6fc8e0 100%);
+  overflow: hidden;
+}
+.title-floaters {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.title-floater {
+  position: absolute;
+  font-size: 34px;
+  opacity: 0.5;
+  animation: floatUp 9s ease-in-out infinite;
+}
+.title-floater:nth-child(1) { left: 8%; top: 18%; }
+.title-floater:nth-child(2) { left: 78%; top: 12%; }
+.title-floater:nth-child(3) { left: 20%; top: 70%; }
+.title-floater:nth-child(4) { left: 64%; top: 76%; }
+.title-floater:nth-child(5) { left: 42%; top: 14%; }
+.title-floater:nth-child(6) { left: 86%; top: 52%; }
+.title-floater:nth-child(7) { left: 12%; top: 44%; }
+.title-floater:nth-child(8) { left: 50%; top: 84%; }
+.title-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 0.92;
+  z-index: 2;
+  filter: drop-shadow(0 4px 0 rgba(43, 45, 66, 0.18));
+}
+.title-merge, .title-pets, .title-island {
+  font-weight: 900;
+  letter-spacing: 2px;
+  -webkit-text-stroke: 2.5px #2b2d42;
+  paint-order: stroke fill;
+}
+.title-merge { font-size: 48px; color: #ff8fc7; }
+.title-pets { font-size: 56px; color: #ffd173; }
+.title-island { font-size: 40px; color: #8be0c8; }
+.title-tagline {
+  z-index: 2;
+  font-weight: 800;
+  color: #2b2d42;
+  margin: 0;
+  letter-spacing: 1px;
+}
+.play-btn {
+  z-index: 2;
+  margin-top: 10px;
+  background: linear-gradient(180deg, #ffe08a, #ffce4d);
+  color: #2b2d42;
+  font-size: 24px;
+  padding: 16px 56px;
+  border-radius: 999px;
+  border: 3px solid #2b2d42;
+  box-shadow: 0 6px 0 #d9a93a;
+  animation: bounce 1.4s ease-in-out infinite;
+}
+.play-btn:active { transform: translateY(4px); box-shadow: 0 2px 0 #d9a93a; }
+.title-hint {
+  z-index: 2;
+  color: #2b6b60;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 6px 24px 0;
+  text-align: center;
+}
+@keyframes floatUp {
+  0%, 100% { transform: translateY(0) rotate(-6deg); }
+  50% { transform: translateY(-22px) rotate(6deg); }
+}
+
 @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
 @keyframes pop { 0% { transform: scale(0); } 70% { transform: scale(1.2); } 100% { transform: scale(1); } }
 @keyframes spin { to { transform: rotate(360deg); } }

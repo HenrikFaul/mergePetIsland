@@ -12,10 +12,12 @@ import { NewPetRevealModal } from './components/NewPetRevealModal';
 import { OfflineRewardModal } from './components/OfflineRewardModal';
 import { DailyRewardModal } from './components/DailyRewardModal';
 import { BiomeUnlockModal } from './components/BiomeUnlockModal';
+import { TitleScreen } from './components/TitleScreen';
 import { BIOME_BY_ID } from './data/biomes';
 
 export function App() {
   const screen = useGame((s) => s.screen);
+  const started = useGame((s) => s.started);
   const init = useGame((s) => s.init);
   const tick = useGame((s) => s.tick);
   const save = useGame((s) => s.save);
@@ -46,6 +48,7 @@ export function App() {
       className={`app ${reducedMotion ? 'reduced-motion' : ''}`}
       style={{ background }}
     >
+      {!started && <TitleScreen />}
       <HUD />
       <main className="screen-host">
         {screen === 'island' && <IslandScreen />}

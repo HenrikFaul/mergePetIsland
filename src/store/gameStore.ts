@@ -32,6 +32,8 @@ export interface Toast {
 }
 
 interface UiState {
+  started: boolean;
+  returningPlayer: boolean;
   screen: Screen;
   toasts: Toast[];
   petReveal: { species: Species; level: number } | null;
@@ -43,6 +45,7 @@ interface UiState {
 interface GameState extends SaveState, UiState {
   // lifecycle
   init: () => void;
+  start: () => void;
   tick: () => void;
   save: () => void;
   // board
@@ -133,6 +136,8 @@ function freshSave(): SaveState {
 }
 
 const initialUi: UiState = {
+  started: false,
+  returningPlayer: false,
   screen: 'island',
   toasts: [],
   petReveal: null,
@@ -195,9 +200,14 @@ export const useGame = create<GameState>((set, get) => ({
       eggPurchasesToday,
       eggPurchaseDate: today,
       ...initialUi,
+      returningPlayer: loaded !== null,
       offlineModal: off.earned > 0 ? off : null,
     });
     get().save();
+  },
+
+  start() {
+    set({ started: true });
   },
 
   tick() {
