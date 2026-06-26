@@ -191,6 +191,12 @@ export const useGame = create<GameState>((set, get) => ({
     // Offline earnings
     const off = computeOffline(base.grid, base.lastSeenAt);
     const today = todayUtc();
+    // Reset each pet's tick clock to now so the first tick() doesn't re-credit
+    // the offline window already granted via the offline modal.
+    const now = Date.now();
+    base.grid = base.grid.map((e) =>
+      e.type === 'pet' ? { ...e, lastTickAt: now } : e,
+    );
 
     // Daily quest refresh
     let quests = base.quests;
@@ -339,7 +345,12 @@ export const useGame = create<GameState>((set, get) => ({
         const grid = st.grid.filter((g) => g.id !== draggedId && g.id !== target.id);
         grid.push(merged);
         const quests = [...st.quests];
-        bumpQuest(quests, 'merge_to_level', 1);
+        // merge_to_level quests only count merges that REACH their target level.
+        for (const q of quests) {
+          if (q.kind === 'merge_to_level' && !q.claimed && merged.level >= (q.level ?? 1)) {
+            q.progress = Math.min(q.target, q.progress + 1);
+          }
+        }
         const isNew = recordAlbum(st as SaveState, merged.species, merged.level);
         if (isNew) {
           bumpQuest(quests, 'unlock_pet', 1);
@@ -369,7 +380,10 @@ export const useGame = create<GameState>((set, get) => ({
       return;
     }
     const egg = EGGS[kind];
-    const price = kind === 'basic' ? basicEggPrice(s.eggPurchasesToday) : egg.cost;
+    // Roll over the daily basic-egg counter if the UTC day changed mid-session.
+    const today = todayUtc();
+    const purchasesToday = s.eggPurchaseDate === today ? s.eggPurchasesToday : 0;
+    const price = kind === 'basic' ? basicEggPrice(purchasesToday) : egg.cost;
     if (egg.currency === 'coin' && s.coins < price) {
       get().pushToast('Not enough coins', '💰');
       return;
@@ -401,7 +415,8 @@ export const useGame = create<GameState>((set, get) => ({
         quests,
         coins: egg.currency === 'coin' ? st.coins - price : st.coins,
         gems: egg.currency === 'gem' ? st.gems - price : st.gems,
-        eggPurchasesToday: st.eggPurchasesToday + (kind === 'basic' ? 1 : 0),
+        eggPurchasesToday: purchasesToday + (kind === 'basic' ? 1 : 0),
+        eggPurchaseDate: today,
         petReveal: isNew
           ? { species: speciesById(pet.species)!, level: pet.level }
           : st.petReveal,
@@ -488,6 +503,11 @@ export const useGame = create<GameState>((set, get) => ({
     const s = get();
     const q = s.quests.find((x) => x.key === key);
     if (!q || q.claimed || q.progress < q.target) return;
+    // Don't consume an egg-bearing quest if there's no room for the pet.
+    if (q.reward.egg && boardIsFull(s.grid)) {
+      get().pushToast('Board is full — merge first!', '⚠️');
+      return;
+    }
     set((st) => {
       const quests = st.quests.map((x) =>
         x.key === key ? { ...x, claimed: true } : x,
@@ -518,6 +538,7 @@ export const useGame = create<GameState>((set, get) => ({
     const yesterday = todayUtc(Date.now() - 86400000);
     const streak = s.lastDailyClaim === yesterday ? s.dailyStreak + 1 : 1;
     const reward = rewardForStreakDay(streak);
+    let legendaryLost = false;
     set((st) => {
       let grid = st.grid;
       if (reward.legendaryPet) {
@@ -526,6 +547,8 @@ export const useGame = create<GameState>((set, get) => ({
         if (pet) {
           grid = [...grid, pet];
           recordAlbum(st as SaveState, pet.species, pet.level);
+        } else {
+          legendaryLost = true;
         }
       }
       return {
@@ -537,6 +560,8 @@ export const useGame = create<GameState>((set, get) => ({
         dailyModalOpen: false,
       };
     });
+    if (legendaryLost)
+      get().pushToast('Board full — free a cell for your legendary pet!', '⚠️');
     track({ name: 'daily_reward_claimed', day: ((streak - 1) % 7) + 1, streak });
     get().pushToast(`Daily Day ${((streak - 1) % 7) + 1} claimed!`, '🎁');
     get().save();
@@ -548,7 +573,13 @@ export const useGame = create<GameState>((set, get) => ({
       get().pushToast('Not enough gems', '💎');
       return;
     }
-    set((st) => ({ gems: st.gems - 1, dailyStreak: Math.max(1, st.dailyStreak) }));
+    // Bridge the missed day: backdate lastDailyClaim to yesterday so the next
+    // claimDaily continues the streak instead of resetting it to 1.
+    set((st) => ({
+      gems: st.gems - 1,
+      dailyStreak: Math.max(1, st.dailyStreak),
+      lastDailyClaim: todayUtc(Date.now() - 86400000),
+    }));
     get().pushToast('Streak restored!', '🔥');
     get().save();
   },

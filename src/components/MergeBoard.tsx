@@ -7,6 +7,10 @@ import { canMerge } from '../engine/mergeRules';
 
 interface DragState {
   id: string;
+  /** Fixed press origin — never overwritten, used for the tap-vs-drag test. */
+  originX: number;
+  originY: number;
+  /** Live pointer position. */
   px: number;
   py: number;
   targetCell: { x: number; y: number } | null;
@@ -34,12 +38,22 @@ export function MergeBoard() {
     e.preventDefault();
     (e.target as HTMLElement).setPointerCapture?.(e.pointerId);
     movedRef.current = false;
-    setDrag({ id: entity.id, px: e.clientX, py: e.clientY, targetCell: null });
+    setDrag({
+      id: entity.id,
+      originX: e.clientX,
+      originY: e.clientY,
+      px: e.clientX,
+      py: e.clientY,
+      targetCell: null,
+    });
   };
 
   const onPointerMove = (e: React.PointerEvent) => {
     if (!drag) return;
-    if (Math.abs(e.clientX - drag.px) > 4 || Math.abs(e.clientY - drag.py) > 4) {
+    if (
+      Math.abs(e.clientX - drag.originX) > 4 ||
+      Math.abs(e.clientY - drag.originY) > 4
+    ) {
       movedRef.current = true;
     }
     const cell = cellFromPoint(e.clientX, e.clientY);

@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { useGame } from '../store/gameStore';
 import { EGGS, EGG_ORDER, basicEggPrice } from '../data/eggs';
 import { showRewarded } from '../lib/ads';
@@ -7,6 +8,13 @@ export function EggShopRibbon() {
   const grantFreeEgg = useGame((s) => s.grantFreeEgg);
   const eggPurchasesToday = useGame((s) => s.eggPurchasesToday);
   const freeEggReadyAt = useGame((s) => s.freeEggReadyAt);
+  // Re-render once per second so the Free Egg button enables when its cooldown
+  // elapses (freeReady derives from Date.now(), which isn't reactive on its own).
+  const [, setNow] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => setNow((n) => n + 1), 1000);
+    return () => clearInterval(id);
+  }, []);
   const freeReady = Date.now() >= freeEggReadyAt;
 
   const freeEggViaAd = async () => {

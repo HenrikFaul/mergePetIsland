@@ -96,6 +96,8 @@ export interface QuestDef {
   kind: QuestKind;
   label: string;
   target: number;
+  /** For merge_to_level quests: the result level a merge must reach to count. */
+  level?: number;
   /** Difficulty tier drives the reward size. */
   difficulty: 'easy' | 'medium' | 'hard';
   reward: { gems: number; egg?: EggKind };

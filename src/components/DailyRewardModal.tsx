@@ -11,7 +11,9 @@ export function DailyRewardModal() {
   if (!open) return null;
 
   const claimedToday = lastClaim === todayUtc();
-  const todayIndex = (streak % 7); // next day to claim (0-based)
+  // Calendar index (0-6) of the cell claimed today, and of the next cell to claim.
+  const claimedMaxIndex = claimedToday ? ((streak - 1) % 7 + 7) % 7 : -1;
+  const nextIndex = (streak % 7 + 7) % 7;
 
   return (
     <div className="modal-overlay" onClick={close}>
@@ -23,8 +25,8 @@ export function DailyRewardModal() {
         <p className="modal-sub">Streak: {streak} day(s)</p>
         <div className="daily-grid">
           {DAILY_REWARDS.map((r, i) => {
-            const isToday = !claimedToday && i === todayIndex;
-            const claimed = claimedToday ? i <= todayIndex : i < todayIndex;
+            const isToday = !claimedToday && i === nextIndex;
+            const claimed = claimedToday ? i <= claimedMaxIndex : i < nextIndex;
             return (
               <div
                 key={r.day}
