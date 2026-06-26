@@ -7,7 +7,10 @@ export function MapScreen() {
   const grid = useGame((s) => s.grid);
   const gems = useGame((s) => s.gems);
   const unlockBiome = useGame((s) => s.unlockBiome);
-  const maxPetLevel = grid.reduce((m, e) => Math.max(m, e.level), 0);
+  const maxPetLevel = grid.reduce(
+    (m, e) => (e.type === 'pet' ? Math.max(m, e.level) : m),
+    0,
+  );
 
   return (
     <div className="screen-scroll">

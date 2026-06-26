@@ -28,14 +28,16 @@ export function App() {
     init();
     const t = setInterval(tick, 1000);
     const s = setInterval(save, 30000);
-    const onHide = () => save();
-    window.addEventListener('visibilitychange', onHide);
-    window.addEventListener('beforeunload', onHide);
+    const onHide = () => {
+      if (document.visibilityState === 'hidden') save();
+    };
+    document.addEventListener('visibilitychange', onHide);
+    window.addEventListener('beforeunload', save);
     return () => {
       clearInterval(t);
       clearInterval(s);
-      window.removeEventListener('visibilitychange', onHide);
-      window.removeEventListener('beforeunload', onHide);
+      document.removeEventListener('visibilitychange', onHide);
+      window.removeEventListener('beforeunload', save);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

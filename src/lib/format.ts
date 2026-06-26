@@ -8,7 +8,13 @@ export function formatNumber(n: number): string {
     v /= 1000;
     u++;
   }
-  const s = v >= 100 ? v.toFixed(0) : v.toFixed(1);
+  let s = v >= 100 ? v.toFixed(0) : v.toFixed(1);
+  // Rounding can push e.g. 999,999 to "1000K"; roll it into the next unit.
+  if (s === '1000' && u < units.length - 1) {
+    v = 1;
+    u++;
+    s = '1.0';
+  }
   return `${s.replace(/\.0$/, '')}${units[u]}`;
 }
 
