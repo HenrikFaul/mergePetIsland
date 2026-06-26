@@ -37,6 +37,8 @@ export interface Species {
   bio: string;
   /** Biome this species belongs to / is themed around. */
   biome: BiomeId;
+  /** If set, this is a season-exclusive pet (season id) — never in random pools. */
+  event?: string;
 }
 
 export type EntityType = 'pet' | 'egg' | 'special';
@@ -125,6 +127,31 @@ export interface DailyRewardDef {
   legendaryPet?: boolean;
 }
 
+// ── Season / Battle Pass ───────────────────────────────────────────────────
+
+export type SeasonReward =
+  | { kind: 'coins'; amount: number }
+  | { kind: 'gems'; amount: number }
+  | { kind: 'egg'; egg: EggKind }
+  | { kind: 'pet'; speciesId: string };
+
+export interface SeasonTier {
+  tier: number; // 1-based
+  free: SeasonReward;
+  premium: SeasonReward;
+}
+
+export interface SeasonDef {
+  id: string;
+  name: string;
+  emoji: string;
+  /** ISO date the season ends (cosmetic countdown). */
+  endsOn: string;
+  /** Season XP ("Stars") needed per tier. */
+  xpPerTier: number;
+  tiers: SeasonTier[];
+}
+
 /** Persisted, serialisable snapshot of the whole game. */
 export interface SaveState {
   version: number;
@@ -143,6 +170,12 @@ export interface SaveState {
   eggPurchaseDate: string | null;
   lastSeenAt: number; // ms epoch
   freeEggReadyAt: number; // ms epoch cooldown for rewarded free egg
+  // Season / Battle Pass
+  seasonId: string;
+  seasonXp: number;
+  seasonPremium: boolean;
+  seasonClaimedFree: number[];
+  seasonClaimedPremium: number[];
   settings: GameSettings;
   stats: GameStats;
 }

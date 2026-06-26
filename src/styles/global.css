@@ -929,3 +929,136 @@ button {
     transition-duration: 0.001ms !important;
   }
 }
+
+/* ── Season / Battle Pass ────────────────────────────── */
+.season-screen { padding-bottom: 96px; }
+.season-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 6px 0 12px;
+}
+.season-emoji {
+  font-size: 40px;
+  filter: drop-shadow(0 2px 3px rgba(43, 45, 66, 0.2));
+}
+.season-name { margin: 0; font-size: 22px; }
+.season-sub { color: var(--ink-soft); font-weight: 700; font-size: 13px; }
+
+.season-xpbar {
+  position: relative;
+  height: 22px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 999px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 3px rgba(43, 45, 66, 0.18);
+  margin-bottom: 12px;
+}
+.season-xpbar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--mint), var(--yolk));
+  transition: width 0.3s ease;
+}
+.season-xplabel {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 900;
+  color: var(--ink);
+}
+
+.season-premium-cta {
+  width: 100%;
+  background: linear-gradient(135deg, #ffe08a, #ffce4d);
+  border: 2px solid #2b2d42;
+  border-radius: 16px;
+  padding: 12px;
+  font-size: 14px;
+  box-shadow: 0 4px 0 #d9a93a;
+  margin-bottom: 14px;
+  animation: bounce 1.8s ease-in-out infinite;
+}
+.season-premium-cta:active { transform: translateY(3px); box-shadow: 0 1px 0 #d9a93a; }
+
+.season-track-head {
+  display: grid;
+  grid-template-columns: 34px 1fr 1fr;
+  gap: 8px;
+  padding: 0 4px 6px;
+  font-size: 11px;
+  font-weight: 900;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+}
+.track-col { text-align: center; }
+
+.season-track { display: flex; flex-direction: column; gap: 8px; }
+.season-tier {
+  display: grid;
+  grid-template-columns: 34px 1fr 1fr;
+  gap: 8px;
+  align-items: stretch;
+  opacity: 0.6;
+}
+.season-tier.reached { opacity: 1; }
+.tier-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  background: var(--card);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.reward-chip {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  background: var(--card);
+  border-radius: 12px;
+  padding: 8px 4px;
+  box-shadow: var(--shadow);
+}
+.reward-chip.premium {
+  background: linear-gradient(180deg, #fff6e0, #ffe9bd);
+}
+.reward-chip.is-pet {
+  background: linear-gradient(180deg, #f3e6ff, #e6d2ff);
+}
+.reward-emoji { font-size: 22px; }
+.reward-label { font-size: 10px; font-weight: 800; text-align: center; line-height: 1.1; }
+.reward-chip.ready {
+  outline: 2px solid var(--mint);
+  animation: bounce 1.6s ease-in-out infinite;
+}
+.reward-chip.claimed { opacity: 0.5; }
+.reward-chip.locked { filter: saturate(0.6); }
+.reward-tick {
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  color: #2e8b57;
+  font-weight: 900;
+}
+.reward-lock {
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  font-size: 11px;
+}
+
+.album-event {
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  color: var(--yolk);
+  font-size: 12px;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+.album-cell { position: relative; }

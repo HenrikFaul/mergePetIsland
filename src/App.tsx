@@ -6,6 +6,7 @@ import { IslandScreen } from './screens/IslandScreen';
 import { MapScreen } from './screens/MapScreen';
 import { ShopScreen } from './screens/ShopScreen';
 import { AlbumScreen } from './screens/AlbumScreen';
+import { SeasonScreen } from './screens/SeasonScreen';
 import { SettingsScreen } from './screens/SettingsScreen';
 import { ToastLayer } from './components/ToastLayer';
 import { NewPetRevealModal } from './components/NewPetRevealModal';
@@ -57,6 +58,7 @@ export function App() {
         {screen === 'map' && <MapScreen />}
         {screen === 'shop' && <ShopScreen />}
         {screen === 'album' && <AlbumScreen />}
+        {screen === 'season' && <SeasonScreen />}
         {screen === 'settings' && <SettingsScreen />}
       </main>
       <BottomNav />

@@ -22,6 +22,7 @@ import { BIOME_BY_ID } from '../data/biomes';
 import { DECORATION_BY_ID } from '../data/decorations';
 import { QUEST_POOL, newActiveQuest } from '../data/quests';
 import { rewardForStreakDay } from '../data/dailyRewards';
+import { SEASON, seasonLevel } from '../data/season';
 import {
   playMerge,
   playCollect,
@@ -31,7 +32,7 @@ import {
 } from '../lib/sound';
 import { track } from '../lib/analytics';
 
-export type Screen = 'island' | 'map' | 'shop' | 'album' | 'settings';
+export type Screen = 'island' | 'map' | 'shop' | 'album' | 'season' | 'settings';
 
 export interface Toast {
   id: string;
@@ -70,6 +71,9 @@ interface GameState extends SaveState, UiState {
   claimQuest: (key: string) => void;
   claimDaily: () => void;
   restoreStreak: () => void;
+  // season / battle pass
+  claimSeasonTier: (tier: number, track: 'free' | 'premium') => void;
+  unlockSeasonPremium: () => void;
   // ui
   setScreen: (s: Screen) => void;
   dismissPetReveal: () => void;
@@ -112,7 +116,7 @@ function freshSave(): SaveState {
   const album: Record<string, number> = {};
   for (const e of grid) album[e.species] = Math.max(album[e.species] ?? 0, e.level);
   return {
-    version: 1,
+    version: 2,
     coins: 100,
     gems: 20,
     grid,
@@ -127,6 +131,11 @@ function freshSave(): SaveState {
     eggPurchaseDate: null,
     lastSeenAt: Date.now(),
     freeEggReadyAt: 0,
+    seasonId: SEASON.id,
+    seasonXp: 0,
+    seasonPremium: false,
+    seasonClaimedFree: [],
+    seasonClaimedPremium: [],
     settings: {
       sound: true,
       music: true,
@@ -187,7 +196,21 @@ export const useGame = create<GameState>((set, get) => ({
 
   init() {
     const loaded = loadSave();
-    const base = loaded ?? freshSave();
+    // Backfill any fields missing from older saves, then reset season progress
+    // if the persisted season is not the current one.
+    const base: SaveState = { ...freshSave(), ...(loaded ?? {}) };
+    if (loaded) {
+      base.version = 2;
+      if (base.seasonId !== SEASON.id) {
+        base.seasonId = SEASON.id;
+        base.seasonXp = 0;
+        base.seasonPremium = false;
+        base.seasonClaimedFree = [];
+        base.seasonClaimedPremium = [];
+      }
+      base.seasonClaimedFree = base.seasonClaimedFree ?? [];
+      base.seasonClaimedPremium = base.seasonClaimedPremium ?? [];
+    }
     // Offline earnings
     const off = computeOffline(base.grid, base.lastSeenAt);
     const today = todayUtc();
@@ -262,6 +285,11 @@ export const useGame = create<GameState>((set, get) => ({
       eggPurchaseDate: s.eggPurchaseDate,
       lastSeenAt: Date.now(),
       freeEggReadyAt: s.freeEggReadyAt,
+      seasonId: s.seasonId,
+      seasonXp: s.seasonXp,
+      seasonPremium: s.seasonPremium,
+      seasonClaimedFree: s.seasonClaimedFree,
+      seasonClaimedPremium: s.seasonClaimedPremium,
       settings: s.settings,
       stats: s.stats,
     };
@@ -282,6 +310,7 @@ export const useGame = create<GameState>((set, get) => ({
         coins: s.coins + gain,
         grid: [...s.grid],
         quests,
+        seasonXp: s.seasonXp + 1,
         stats: { ...s.stats, totalCoinsCollected: s.stats.totalCoinsCollected + gain },
       };
     });
@@ -306,6 +335,7 @@ export const useGame = create<GameState>((set, get) => ({
         coins: s.coins + gain,
         grid: [...s.grid],
         quests,
+        seasonXp: s.seasonXp + 1,
         stats: { ...s.stats, totalCoinsCollected: s.stats.totalCoinsCollected + gain },
       };
     });
@@ -361,6 +391,7 @@ export const useGame = create<GameState>((set, get) => ({
         return {
           grid,
           quests,
+          seasonXp: st.seasonXp + 2 + merged.level,
           stats: { ...st.stats, totalMerges: st.stats.totalMerges + 1 },
           petReveal: isNew
             ? { species: speciesById(merged.species)!, level: merged.level }
@@ -520,7 +551,7 @@ export const useGame = create<GameState>((set, get) => ({
           recordAlbum(st as SaveState, pet.species, pet.level);
         }
       }
-      return { quests, gems: st.gems + q.reward.gems, grid };
+      return { quests, gems: st.gems + q.reward.gems, grid, seasonXp: st.seasonXp + 20 };
     });
     track({ name: 'quest_completed', key });
     get().pushToast(`Quest reward: +${q.reward.gems}💎`, '🎉');
@@ -581,6 +612,75 @@ export const useGame = create<GameState>((set, get) => ({
       lastDailyClaim: todayUtc(Date.now() - 86400000),
     }));
     get().pushToast('Streak restored!', '🔥');
+    get().save();
+  },
+
+  claimSeasonTier(tier, track) {
+    const s = get();
+    const tierDef = SEASON.tiers.find((t) => t.tier === tier);
+    if (!tierDef) return;
+    if (seasonLevel(s.seasonXp) < tier) {
+      get().pushToast(`Reach Tier ${tier} first`, '🔒');
+      return;
+    }
+    if (track === 'premium' && !s.seasonPremium) {
+      get().pushToast('Unlock the Battle Pass to claim', '🏆');
+      return;
+    }
+    const claimedList =
+      track === 'free' ? s.seasonClaimedFree : s.seasonClaimedPremium;
+    if (claimedList.includes(tier)) return;
+    const reward = track === 'free' ? tierDef.free : tierDef.premium;
+    if ((reward.kind === 'pet' || reward.kind === 'egg') && boardIsFull(s.grid)) {
+      get().pushToast('Board is full — merge first!', '⚠️');
+      return;
+    }
+    set((st) => {
+      let grid = st.grid;
+      let coins = st.coins;
+      let gems = st.gems;
+      if (reward.kind === 'coins') coins += reward.amount;
+      else if (reward.kind === 'gems') gems += reward.amount;
+      else if (reward.kind === 'egg') {
+        const pet = spawnFromEgg(EGGS[reward.egg], grid, st.biomesUnlocked, false);
+        if (pet) {
+          grid = [...grid, pet];
+          recordAlbum(st as SaveState, pet.species, pet.level);
+        }
+      } else if (reward.kind === 'pet') {
+        const pet = spawnSpecies(reward.speciesId, 1, grid);
+        if (pet) {
+          grid = [...grid, pet];
+          recordAlbum(st as SaveState, pet.species, pet.level);
+        }
+      }
+      const claimedFree =
+        track === 'free' ? [...st.seasonClaimedFree, tier] : st.seasonClaimedFree;
+      const claimedPremium =
+        track === 'premium'
+          ? [...st.seasonClaimedPremium, tier]
+          : st.seasonClaimedPremium;
+      return {
+        coins,
+        gems,
+        grid,
+        seasonClaimedFree: claimedFree,
+        seasonClaimedPremium: claimedPremium,
+        petReveal:
+          reward.kind === 'pet'
+            ? { species: speciesById(reward.speciesId)!, level: 1 }
+            : st.petReveal,
+      };
+    });
+    get().pushToast(`Tier ${tier} reward claimed!`, '🎁');
+    if (reward.kind === 'pet') playReveal();
+    get().save();
+  },
+
+  unlockSeasonPremium() {
+    if (get().seasonPremium) return;
+    set({ seasonPremium: true });
+    get().pushToast('Battle Pass unlocked! 🏆', '✨');
     get().save();
   },
 

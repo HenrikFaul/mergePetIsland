@@ -3,6 +3,7 @@ import { useGame, type Screen } from '../store/gameStore';
 const TABS: { id: Screen; label: string; emoji: string }[] = [
   { id: 'island', label: 'Island', emoji: '🏝️' },
   { id: 'map', label: 'Map', emoji: '🗺️' },
+  { id: 'season', label: 'Season', emoji: '🏆' },
   { id: 'shop', label: 'Shop', emoji: '🛒' },
   { id: 'album', label: 'Album', emoji: '📖' },
   { id: 'settings', label: 'Settings', emoji: '⚙️' },

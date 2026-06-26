@@ -8,6 +8,7 @@ export function ShopScreen() {
   const owned = useGame((s) => s.ownedDecorations);
   const buyDecoration = useGame((s) => s.buyDecoration);
   const grant = useGame((s) => s.grant);
+  const unlockSeasonPremium = useGame((s) => s.unlockSeasonPremium);
 
   return (
     <div className="screen-scroll">
@@ -28,6 +29,7 @@ export function ShopScreen() {
               onClick={() => {
                 // Sandbox grant — real builds validate the receipt server-side.
                 grant(p.grantCoins ?? 0, p.grantGems ?? 0);
+                if (p.productId === 'battlepass.s1') unlockSeasonPremium();
               }}
             >
               {isHero && <span className="iap-ribbon">BEST</span>}

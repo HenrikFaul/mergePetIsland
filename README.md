@@ -20,6 +20,7 @@ design brief, plus the Supabase backend definitions and edge functions. The
 | 60 collectable pets · 8 families · 5 rarities | ✅ |
 | Pet Album (Pokédex) | ✅ |
 | 6 biomes with level + gem unlock gates | ✅ |
+| Season / Battle Pass (30 tiers, free + premium, 15 exclusive pets) | ✅ |
 | Daily quests (3/day, easy/medium/hard) | ✅ |
 | Daily reward calendar + streak (Day 7 legendary) | ✅ |
 | Offline reward (8h cap, ad-double) | ✅ |
