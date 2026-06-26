@@ -705,3 +705,227 @@ button {
 @keyframes pop { 0% { transform: scale(0); } 70% { transform: scale(1.2); } 100% { transform: scale(1); } }
 @keyframes spin { to { transform: rotate(360deg); } }
 @keyframes toast-in { from { transform: translateY(-10px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+
+/* ════════════════════════════════════════════════════════════════════
+   POLISH PASS — synthesised from the 10-agent UI review. Additive layer.
+   ════════════════════════════════════════════════════════════════════ */
+
+/* Tactile press feedback on every interactive surface (play-btn keeps its own). */
+.hud-btn:active,
+.pill-btn:active,
+.nav-btn:active,
+.claim-btn:not(:disabled):active,
+.big-btn:not(:disabled):active,
+.egg-btn:not(:disabled):active,
+.iap-card:active,
+.decor-card:active {
+  transform: translateY(1px) scale(0.97);
+}
+.hud-btn,
+.pill-btn,
+.claim-btn,
+.big-btn,
+.egg-btn,
+.iap-card,
+.decor-card,
+.nav-btn {
+  transition: transform 0.08s ease, box-shadow 0.14s ease, filter 0.14s ease;
+}
+
+/* HUD — steady-width numerals so values don't jitter as digits change. */
+.hud-value {
+  font-variant-numeric: tabular-nums;
+  min-width: 2.4ch;
+  text-align: right;
+}
+.hud-chip:nth-child(2) {
+  background: linear-gradient(180deg, #ffffff, #eef4ff);
+}
+
+/* Bottom nav — confident active affordance: top pip + icon pop. */
+.nav-btn.active {
+  position: relative;
+}
+.nav-btn.active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 22px;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--mint);
+}
+.nav-btn.active .nav-emoji {
+  transform: translateY(-1px) scale(1.14);
+}
+
+/* Board — drop-target reads instantly; drag ghost feels lifted. */
+.board-cell.merge-target,
+.board-cell.merge-ok {
+  animation: cellPulse 0.8s ease-in-out infinite;
+}
+.board-cell.merge-ok {
+  box-shadow: inset 0 0 0 3px rgba(122, 199, 184, 0.9);
+}
+@keyframes cellPulse {
+  0%, 100% { filter: brightness(1); }
+  50% { filter: brightness(1.18); }
+}
+.drag-ghost {
+  filter: drop-shadow(0 12px 10px rgba(0, 0, 0, 0.35));
+  transform: translate(-50%, -56%) scale(1.18) rotate(-4deg);
+}
+
+/* Pet — glossy squishy highlight makes the flat circle read as a toy. */
+.pet::after {
+  content: '';
+  position: absolute;
+  top: 7%;
+  left: 20%;
+  width: 44%;
+  height: 30%;
+  border-radius: 50%;
+  background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0));
+  pointer-events: none;
+}
+
+/* Egg ribbon — price pill + a gentle pulse when the free egg is ready. */
+.egg-price {
+  background: rgba(43, 45, 66, 0.09);
+  border-radius: 999px;
+  padding: 1px 9px;
+  color: var(--ink);
+  font-weight: 800;
+}
+.egg-btn.free.ready {
+  animation: bounce 1.4s ease-in-out infinite;
+}
+
+/* Quests — glossy gradient bar with a travelling shimmer; ready claim pulses. */
+.quest-bar-fill {
+  background: linear-gradient(90deg, var(--yolk), var(--mint));
+  position: relative;
+  overflow: hidden;
+}
+.quest-bar-fill::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.55), transparent);
+  transform: translateX(-100%);
+  animation: shimmer 1.6s linear infinite;
+}
+@keyframes shimmer {
+  to { transform: translateX(100%); }
+}
+.quest-row .claim-btn:not(:disabled) {
+  animation: bounce 1.6s ease-in-out infinite;
+}
+
+/* Map — dim locked biomes, crown the unlocked ones, legible requirement chips. */
+.biome-card {
+  position: relative;
+}
+.biome-card:not(.unlocked) {
+  filter: saturate(0.62) brightness(0.98);
+}
+.biome-card.unlocked {
+  box-shadow: 0 6px 18px rgba(43, 45, 66, 0.24);
+}
+.biome-reqs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+.req-chip {
+  font-size: 11px;
+  font-weight: 800;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+  font-variant-numeric: tabular-nums;
+}
+.req-chip.pass { color: #2e8b57; }
+.req-chip.fail { color: #c0392b; }
+
+/* Shop — hero the Starter Pack, flag value. */
+.iap-card {
+  position: relative;
+  overflow: hidden;
+}
+.iap-card.hero {
+  grid-column: span 2;
+  background: linear-gradient(135deg, #fff3d6, #ffe3a6);
+  outline: 2px solid var(--yolk);
+}
+.iap-ribbon {
+  position: absolute;
+  top: 10px;
+  right: -28px;
+  transform: rotate(45deg);
+  background: #ff6b6b;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  padding: 2px 30px;
+}
+.iap-value {
+  font-size: 10px;
+  color: var(--ink-soft);
+  font-weight: 800;
+}
+
+/* Album — rarity-tinted cells, glow for the rare ones, cleaner locked state. */
+.album-cell.seen {
+  box-shadow: inset 0 0 0 2px var(--rarity), 0 4px 10px rgba(43, 45, 66, 0.1);
+}
+.album-cell.rarity-legendary,
+.album-cell.rarity-mythic {
+  box-shadow: inset 0 0 0 2px var(--rarity), 0 0 14px var(--rarity);
+}
+.album-cell.locked .album-emoji {
+  filter: grayscale(1) brightness(0.55);
+  opacity: 0.5;
+}
+
+/* Reveal — rotating ray burst + rarity-driven drama. */
+.reveal-burst {
+  position: absolute;
+  inset: -35%;
+  height: auto;
+  background: repeating-conic-gradient(
+    from 0deg at 50% 42%,
+    rgba(255, 255, 255, 0.09) 0deg 9deg,
+    transparent 9deg 18deg
+  );
+  animation: spin 16s linear infinite;
+}
+.reveal-card.rarity-epic { box-shadow: 0 0 36px rgba(160, 110, 242, 0.45); }
+.reveal-card.rarity-legendary { box-shadow: 0 0 42px rgba(255, 176, 32, 0.5); }
+.reveal-card.rarity-mythic { box-shadow: 0 0 52px rgba(255, 92, 174, 0.55); }
+
+/* Offline reward — celebrate the haul with a golden coin pill. */
+.offline-amount {
+  display: inline-block;
+  background: linear-gradient(180deg, #ffe7a8, #ffce4d);
+  color: #7a5512;
+  padding: 8px 24px;
+  border-radius: 999px;
+  box-shadow: 0 4px 0 #d9a93a;
+  animation: pop 0.45s ease;
+}
+
+/* Respect the operating system's reduced-motion preference too. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

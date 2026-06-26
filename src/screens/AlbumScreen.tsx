@@ -1,3 +1,4 @@
+import type { CSSProperties } from 'react';
 import { useGame } from '../store/gameStore';
 import { SPECIES } from '../data/species';
 import { FAMILY_LABEL, RARITY_COLOR, RARITY_LABEL } from '../data/families';
@@ -37,8 +38,13 @@ export function AlbumScreen() {
                 return (
                   <div
                     key={sp.id}
-                    className={`album-cell ${seen ? '' : 'locked'}`}
-                    style={{ borderColor: RARITY_COLOR[sp.rarity] }}
+                    className={`album-cell ${seen ? `seen rarity-${sp.rarity}` : 'locked'}`}
+                    style={
+                      {
+                        borderColor: RARITY_COLOR[sp.rarity],
+                        '--rarity': RARITY_COLOR[sp.rarity],
+                      } as CSSProperties
+                    }
                     title={seen ? sp.bio : 'Not discovered yet'}
                   >
                     <span className="album-emoji">{seen ? sp.emoji : '❔'}</span>

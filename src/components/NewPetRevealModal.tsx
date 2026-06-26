@@ -9,7 +9,10 @@ export function NewPetRevealModal() {
 
   return (
     <div className="modal-overlay reveal" onClick={dismiss}>
-      <div className="reveal-card" onClick={(e) => e.stopPropagation()}>
+      <div
+        className={`reveal-card rarity-${species.rarity}`}
+        onClick={(e) => e.stopPropagation()}
+      >
         <div className="reveal-burst" />
         <span className="reveal-tag">NEW PET!</span>
         <div

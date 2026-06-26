@@ -34,9 +34,14 @@ export function MapScreen() {
                   <span className="biome-state">Unlocked ✓</span>
                 ) : (
                   <>
-                    <span className="biome-req">
-                      Needs Lv{b.requiresPetLevel} pet · 💎{formatNumber(b.gemCost)}
-                    </span>
+                    <div className="biome-reqs">
+                      <span className={`req-chip ${meetsLevel ? 'pass' : 'fail'}`}>
+                        {meetsLevel ? '✓' : '🔒'} Lv{b.requiresPetLevel} pet
+                      </span>
+                      <span className={`req-chip ${affordable ? 'pass' : 'fail'}`}>
+                        💎 {formatNumber(b.gemCost)}
+                      </span>
+                    </div>
                     <button
                       className="claim-btn"
                       disabled={!meetsLevel || !affordable}

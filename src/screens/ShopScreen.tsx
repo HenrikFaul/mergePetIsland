@@ -15,20 +15,29 @@ export function ShopScreen() {
 
       <h3 className="section-title">💎 Gem Packs</h3>
       <div className="iap-grid">
-        {IAP_CATALOG.map((p) => (
-          <button
-            key={p.productId}
-            className="iap-card"
-            onClick={() => {
-              // Sandbox grant — real builds validate the receipt server-side.
-              grant(p.grantCoins ?? 0, p.grantGems ?? 0);
-            }}
-          >
-            <span className="iap-emoji">{p.emoji}</span>
-            <span className="iap-title">{p.title}</span>
-            <span className="iap-price">${p.priceUsd.toFixed(2)}</span>
-          </button>
-        ))}
+        {IAP_CATALOG.map((p) => {
+          const isHero = p.productId === 'starter.pack';
+          const perDollar =
+            p.type === 'consumable' && p.grantGems
+              ? Math.round(p.grantGems / p.priceUsd)
+              : null;
+          return (
+            <button
+              key={p.productId}
+              className={`iap-card ${isHero ? 'hero' : ''}`}
+              onClick={() => {
+                // Sandbox grant — real builds validate the receipt server-side.
+                grant(p.grantCoins ?? 0, p.grantGems ?? 0);
+              }}
+            >
+              {isHero && <span className="iap-ribbon">BEST</span>}
+              <span className="iap-emoji">{p.emoji}</span>
+              <span className="iap-title">{p.title}</span>
+              {perDollar && <span className="iap-value">{perDollar} gems / $</span>}
+              <span className="iap-price">${p.priceUsd.toFixed(2)}</span>
+            </button>
+          );
+        })}
       </div>
 
       <h3 className="section-title">🌸 Decorations (+2–4% island boost)</h3>

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useGame } from '../store/gameStore';
 import { EGGS, EGG_ORDER, basicEggPrice } from '../data/eggs';
 import { showRewarded } from '../lib/ads';
+import { formatDuration } from '../lib/format';
 
 export function EggShopRibbon() {
   const buyEgg = useGame((s) => s.buyEgg);
@@ -38,13 +39,17 @@ export function EggShopRibbon() {
         );
       })}
       <button
-        className={`egg-btn free ${freeReady ? '' : 'disabled'}`}
+        className={`egg-btn free ${freeReady ? 'ready' : 'disabled'}`}
         onClick={freeEggViaAd}
         disabled={!freeReady}
       >
         <span className="egg-emoji">🎬</span>
         <span className="egg-label">Free Egg</span>
-        <span className="egg-price">{freeReady ? 'Watch Ad' : 'Cooldown'}</span>
+        <span className="egg-price">
+          {freeReady
+            ? 'Watch Ad'
+            : formatDuration(Math.ceil((freeEggReadyAt - Date.now()) / 1000))}
+        </span>
       </button>
     </div>
   );
