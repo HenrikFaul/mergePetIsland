@@ -26,6 +26,9 @@ design brief, plus the Supabase backend definitions and edge functions. The
 | Decorations (+2–4% island boost) | ✅ |
 | Shop + IAP catalog (sandbox grants) | ✅ |
 | Settings, stats, reduced-motion / color-blind options | ✅ |
+| Procedural sound FX (Web Audio, zero assets) | ✅ |
+| Rewarded-ad + analytics event hooks wired into flows | ✅ |
+| Title / splash screen with PLAY | ✅ |
 | LocalStorage persistence + autosave | ✅ |
 | Supabase schema + edge functions (sync, offline, quests, IAP) | ✅ |
 

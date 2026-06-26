@@ -1,5 +1,6 @@
 import { useGame } from '../store/gameStore';
 import { EGGS, EGG_ORDER, basicEggPrice } from '../data/eggs';
+import { showRewarded } from '../lib/ads';
 
 export function EggShopRibbon() {
   const buyEgg = useGame((s) => s.buyEgg);
@@ -7,6 +8,11 @@ export function EggShopRibbon() {
   const eggPurchasesToday = useGame((s) => s.eggPurchasesToday);
   const freeEggReadyAt = useGame((s) => s.freeEggReadyAt);
   const freeReady = Date.now() >= freeEggReadyAt;
+
+  const freeEggViaAd = async () => {
+    const ok = await showRewarded('free_egg');
+    if (ok) grantFreeEgg();
+  };
 
   return (
     <div className="egg-ribbon">
@@ -25,7 +31,7 @@ export function EggShopRibbon() {
       })}
       <button
         className={`egg-btn free ${freeReady ? '' : 'disabled'}`}
-        onClick={grantFreeEgg}
+        onClick={freeEggViaAd}
         disabled={!freeReady}
       >
         <span className="egg-emoji">🎬</span>

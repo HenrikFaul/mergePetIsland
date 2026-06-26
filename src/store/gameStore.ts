@@ -22,6 +22,14 @@ import { BIOME_BY_ID } from '../data/biomes';
 import { DECORATION_BY_ID } from '../data/decorations';
 import { QUEST_POOL, newActiveQuest } from '../data/quests';
 import { rewardForStreakDay } from '../data/dailyRewards';
+import {
+  playMerge,
+  playCollect,
+  playReveal,
+  setSoundEnabled,
+  resumeAudio,
+} from '../lib/sound';
+import { track } from '../lib/analytics';
 
 export type Screen = 'island' | 'map' | 'shop' | 'album' | 'settings';
 
@@ -203,10 +211,12 @@ export const useGame = create<GameState>((set, get) => ({
       returningPlayer: loaded !== null,
       offlineModal: off.earned > 0 ? off : null,
     });
+    setSoundEnabled(base.settings.sound);
     get().save();
   },
 
   start() {
+    resumeAudio();
     set({ started: true });
   },
 
@@ -258,6 +268,7 @@ export const useGame = create<GameState>((set, get) => ({
       if (!e || e.accumulatedCoin <= 0) return {};
       const gain = Math.floor(e.accumulatedCoin);
       e.accumulatedCoin = 0;
+      playCollect();
       const quests = [...s.quests];
       bumpQuest(quests, 'collect_coins', gain);
       bumpQuest(quests, 'tap_collect', 1);
@@ -281,6 +292,7 @@ export const useGame = create<GameState>((set, get) => ({
         }
       }
       if (gain <= 0) return {};
+      playCollect();
       const quests = [...s.quests];
       bumpQuest(quests, 'collect_coins', gain);
       bumpQuest(quests, 'tap_collect', 1);
@@ -316,13 +328,25 @@ export const useGame = create<GameState>((set, get) => ({
 
     if (canMerge(dragged, target)) {
       const merged = mergeEntities(dragged, target);
+      playMerge();
+      track({
+        name: 'merge_performed',
+        species: merged.species,
+        from_level: target.level,
+        to_level: merged.level,
+      });
       set((st) => {
         const grid = st.grid.filter((g) => g.id !== draggedId && g.id !== target.id);
         grid.push(merged);
         const quests = [...st.quests];
         bumpQuest(quests, 'merge_to_level', 1);
         const isNew = recordAlbum(st as SaveState, merged.species, merged.level);
-        if (isNew) bumpQuest(quests, 'unlock_pet', 1);
+        if (isNew) {
+          bumpQuest(quests, 'unlock_pet', 1);
+          playReveal();
+          const sp = speciesById(merged.species);
+          if (sp) track({ name: 'pet_unlocked', species: sp.id, rarity: sp.rarity, level: merged.level });
+        }
         return {
           grid,
           quests,
@@ -360,12 +384,18 @@ export const useGame = create<GameState>((set, get) => ({
       get().pushToast('Board is full — merge first!', '⚠️');
       return;
     }
+    track({ name: 'egg_purchased', egg_type: kind, source: 'shop' });
     set((st) => {
       const grid = [...st.grid, pet];
       const quests = [...st.quests];
       bumpQuest(quests, 'buy_egg', 1);
       const isNew = recordAlbum(st as SaveState, pet.species, pet.level);
-      if (isNew) bumpQuest(quests, 'unlock_pet', 1);
+      if (isNew) {
+        bumpQuest(quests, 'unlock_pet', 1);
+        playReveal();
+        const sp = speciesById(pet.species);
+        if (sp) track({ name: 'pet_unlocked', species: sp.id, rarity: sp.rarity, level: pet.level });
+      }
       return {
         grid,
         quests,
@@ -425,6 +455,8 @@ export const useGame = create<GameState>((set, get) => ({
       biomeUnlockModal: id,
       stats: { ...st.stats, biomesUnlocked: st.stats.biomesUnlocked + 1 },
     }));
+    playReveal();
+    track({ name: 'biome_unlocked', biome: id });
     get().save();
   },
 
@@ -470,6 +502,7 @@ export const useGame = create<GameState>((set, get) => ({
       }
       return { quests, gems: st.gems + q.reward.gems, grid };
     });
+    track({ name: 'quest_completed', key });
     get().pushToast(`Quest reward: +${q.reward.gems}💎`, '🎉');
     get().save();
   },
@@ -504,6 +537,7 @@ export const useGame = create<GameState>((set, get) => ({
         dailyModalOpen: false,
       };
     });
+    track({ name: 'daily_reward_claimed', day: ((streak - 1) % 7) + 1, streak });
     get().pushToast(`Daily Day ${((streak - 1) % 7) + 1} claimed!`, '🎁');
     get().save();
   },
@@ -536,6 +570,7 @@ export const useGame = create<GameState>((set, get) => ({
       offlineModal: null,
       stats: { ...st.stats, totalCoinsCollected: st.stats.totalCoinsCollected + earned },
     }));
+    track({ name: 'offline_reward_claimed', amount: earned, doubled });
     get().pushToast(`+${earned} coins offline`, '💰');
     get().save();
   },
@@ -559,6 +594,7 @@ export const useGame = create<GameState>((set, get) => ({
   },
 
   updateSettings(patch) {
+    if (patch.sound !== undefined) setSoundEnabled(patch.sound);
     set((s) => ({ settings: { ...s.settings, ...patch } }));
     get().save();
   },
