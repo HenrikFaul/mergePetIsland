@@ -1,0 +1,25 @@
+{
+  "iap": [
+    {
+      "sku": "remove_ads",
+      "price": "2.99"
+    },
+    {
+      "sku": "starter_pack",
+      "price": "1.99"
+    },
+    {
+      "sku": "gem_pack_small",
+      "price": "4.99"
+    },
+    {
+      "sku": "season_pass",
+      "price": "6.99"
+    }
+  ],
+  "rewarded_ads": [
+    "extra_space",
+    "speed_up",
+    "double_coins"
+  ]
+}

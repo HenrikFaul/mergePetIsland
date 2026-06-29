@@ -1,0 +1,74 @@
+[
+  {
+    "id": "cottage",
+    "levels": 3,
+    "baseCost": 200,
+    "spritePattern": "Art/Buildings/building_cottage_lv{level}_512.png"
+  },
+  {
+    "id": "fountain",
+    "levels": 3,
+    "baseCost": 320,
+    "spritePattern": "Art/Buildings/building_fountain_lv{level}_512.png"
+  },
+  {
+    "id": "bakery",
+    "levels": 3,
+    "baseCost": 440,
+    "spritePattern": "Art/Buildings/building_bakery_lv{level}_512.png"
+  },
+  {
+    "id": "treehouse",
+    "levels": 3,
+    "baseCost": 560,
+    "spritePattern": "Art/Buildings/building_treehouse_lv{level}_512.png"
+  },
+  {
+    "id": "market",
+    "levels": 3,
+    "baseCost": 680,
+    "spritePattern": "Art/Buildings/building_market_lv{level}_512.png"
+  },
+  {
+    "id": "tower",
+    "levels": 3,
+    "baseCost": 800,
+    "spritePattern": "Art/Buildings/building_tower_lv{level}_512.png"
+  },
+  {
+    "id": "dock",
+    "levels": 3,
+    "baseCost": 920,
+    "spritePattern": "Art/Buildings/building_dock_lv{level}_512.png"
+  },
+  {
+    "id": "garden",
+    "levels": 3,
+    "baseCost": 1040,
+    "spritePattern": "Art/Buildings/building_garden_lv{level}_512.png"
+  },
+  {
+    "id": "crystal_mine",
+    "levels": 3,
+    "baseCost": 1160,
+    "spritePattern": "Art/Buildings/building_crystal_mine_lv{level}_512.png"
+  },
+  {
+    "id": "workshop",
+    "levels": 3,
+    "baseCost": 1280,
+    "spritePattern": "Art/Buildings/building_workshop_lv{level}_512.png"
+  },
+  {
+    "id": "pet_hospital",
+    "levels": 3,
+    "baseCost": 1400,
+    "spritePattern": "Art/Buildings/building_pet_hospital_lv{level}_512.png"
+  },
+  {
+    "id": "dragon_shrine",
+    "levels": 3,
+    "baseCost": 1520,
+    "spritePattern": "Art/Buildings/building_dragon_shrine_lv{level}_512.png"
+  }
+]

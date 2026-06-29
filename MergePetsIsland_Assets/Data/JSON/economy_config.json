@@ -1,0 +1,25 @@
+{
+  "softCurrency": "coins",
+  "hardCurrency": "gems",
+  "rewardedAdRewards": {
+    "coins": 500,
+    "gems": 10,
+    "speedMinutes": 15
+  },
+  "iapPacks": [
+    {
+      "id": "starter_pack",
+      "priceUSD": 1.99,
+      "coins": 5000,
+      "gems": 120
+    },
+    {
+      "id": "remove_ads",
+      "priceUSD": 2.99
+    },
+    {
+      "id": "season_pass",
+      "priceUSD": 4.99
+    }
+  ]
+}

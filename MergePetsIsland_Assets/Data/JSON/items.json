@@ -1,0 +1,257 @@
+[
+  {
+    "id": "coin",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_coin.png"
+  },
+  {
+    "id": "gem_blue",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_gem_blue.png"
+  },
+  {
+    "id": "gem_purple",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_gem_purple.png"
+  },
+  {
+    "id": "star",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_star.png"
+  },
+  {
+    "id": "energy",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_energy.png"
+  },
+  {
+    "id": "heart",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_heart.png"
+  },
+  {
+    "id": "chest",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_chest.png"
+  },
+  {
+    "id": "ticket",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_ticket.png"
+  },
+  {
+    "id": "key",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_key.png"
+  },
+  {
+    "id": "hammer",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_hammer.png"
+  },
+  {
+    "id": "shovel",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_shovel.png"
+  },
+  {
+    "id": "watering_can",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_watering_can.png"
+  },
+  {
+    "id": "apple",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_apple.png"
+  },
+  {
+    "id": "egg",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_egg.png"
+  },
+  {
+    "id": "pet_food",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_pet_food.png"
+  },
+  {
+    "id": "wood",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_wood.png"
+  },
+  {
+    "id": "stone",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_stone.png"
+  },
+  {
+    "id": "leaf",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_leaf.png"
+  },
+  {
+    "id": "map",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_map.png"
+  },
+  {
+    "id": "compass",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_compass.png"
+  },
+  {
+    "id": "clock",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_clock.png"
+  },
+  {
+    "id": "trophy",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_trophy.png"
+  },
+  {
+    "id": "crown",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_crown.png"
+  },
+  {
+    "id": "medal",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_medal.png"
+  },
+  {
+    "id": "gift",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_gift.png"
+  },
+  {
+    "id": "calendar",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_calendar.png"
+  },
+  {
+    "id": "settings",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_settings.png"
+  },
+  {
+    "id": "sound",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_sound.png"
+  },
+  {
+    "id": "music",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_music.png"
+  },
+  {
+    "id": "privacy",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_privacy.png"
+  },
+  {
+    "id": "leaderboard",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_leaderboard.png"
+  },
+  {
+    "id": "mission",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_mission.png"
+  },
+  {
+    "id": "order",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_order.png"
+  },
+  {
+    "id": "bag",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_bag.png"
+  },
+  {
+    "id": "decor",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_decor.png"
+  },
+  {
+    "id": "building",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_building.png"
+  },
+  {
+    "id": "boost",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_boost.png"
+  },
+  {
+    "id": "speed",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_speed.png"
+  },
+  {
+    "id": "magnet",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_magnet.png"
+  },
+  {
+    "id": "rainbow",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_rainbow.png"
+  },
+  {
+    "id": "bomb",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_bomb.png"
+  },
+  {
+    "id": "extra_space",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_extra_space.png"
+  },
+  {
+    "id": "coin_boost",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_coin_boost.png"
+  },
+  {
+    "id": "gem_pack",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_gem_pack.png"
+  },
+  {
+    "id": "season_badge",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_season_badge.png"
+  },
+  {
+    "id": "dragon_token",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_dragon_token.png"
+  },
+  {
+    "id": "no_ads",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_no_ads.png"
+  },
+  {
+    "id": "vip",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_vip.png"
+  },
+  {
+    "id": "xp",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_xp.png"
+  },
+  {
+    "id": "level",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_level.png"
+  },
+  {
+    "id": "unlock",
+    "type": "icon",
+    "asset": "Art/Icons/Items/icon_unlock.png"
+  }
+]

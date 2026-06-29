@@ -1,0 +1,802 @@
+[
+  {
+    "id": "order_001",
+    "requires": [
+      "panda",
+      "fox",
+      "bunny"
+    ],
+    "rewardCoins": 218,
+    "rewardXP": 21
+  },
+  {
+    "id": "order_002",
+    "requires": [
+      "dragon",
+      "bunny",
+      "panda"
+    ],
+    "rewardCoins": 236,
+    "rewardXP": 22
+  },
+  {
+    "id": "order_003",
+    "requires": [
+      "cat",
+      "puppy",
+      "bunny"
+    ],
+    "rewardCoins": 254,
+    "rewardXP": 23
+  },
+  {
+    "id": "order_004",
+    "requires": [
+      "puppy",
+      "dragon",
+      "bunny"
+    ],
+    "rewardCoins": 272,
+    "rewardXP": 24
+  },
+  {
+    "id": "order_005",
+    "requires": [
+      "unicorn",
+      "panda",
+      "dragon"
+    ],
+    "rewardCoins": 290,
+    "rewardXP": 25
+  },
+  {
+    "id": "order_006",
+    "requires": [
+      "fox",
+      "dragon",
+      "bunny"
+    ],
+    "rewardCoins": 308,
+    "rewardXP": 26
+  },
+  {
+    "id": "order_007",
+    "requires": [
+      "unicorn",
+      "turtle",
+      "puppy"
+    ],
+    "rewardCoins": 326,
+    "rewardXP": 27
+  },
+  {
+    "id": "order_008",
+    "requires": [
+      "turtle",
+      "bunny",
+      "unicorn"
+    ],
+    "rewardCoins": 344,
+    "rewardXP": 28
+  },
+  {
+    "id": "order_009",
+    "requires": [
+      "bunny",
+      "dragon",
+      "panda"
+    ],
+    "rewardCoins": 362,
+    "rewardXP": 29
+  },
+  {
+    "id": "order_010",
+    "requires": [
+      "turtle",
+      "panda",
+      "dragon"
+    ],
+    "rewardCoins": 380,
+    "rewardXP": 30
+  },
+  {
+    "id": "order_011",
+    "requires": [
+      "dragon",
+      "bunny",
+      "cat"
+    ],
+    "rewardCoins": 398,
+    "rewardXP": 31
+  },
+  {
+    "id": "order_012",
+    "requires": [
+      "turtle",
+      "puppy",
+      "dragon"
+    ],
+    "rewardCoins": 416,
+    "rewardXP": 32
+  },
+  {
+    "id": "order_013",
+    "requires": [
+      "turtle",
+      "dragon",
+      "cat"
+    ],
+    "rewardCoins": 434,
+    "rewardXP": 33
+  },
+  {
+    "id": "order_014",
+    "requires": [
+      "turtle",
+      "bunny",
+      "puppy"
+    ],
+    "rewardCoins": 452,
+    "rewardXP": 34
+  },
+  {
+    "id": "order_015",
+    "requires": [
+      "dragon",
+      "bunny",
+      "cat"
+    ],
+    "rewardCoins": 470,
+    "rewardXP": 35
+  },
+  {
+    "id": "order_016",
+    "requires": [
+      "unicorn",
+      "dragon",
+      "panda"
+    ],
+    "rewardCoins": 488,
+    "rewardXP": 36
+  },
+  {
+    "id": "order_017",
+    "requires": [
+      "fox",
+      "dragon",
+      "puppy"
+    ],
+    "rewardCoins": 506,
+    "rewardXP": 37
+  },
+  {
+    "id": "order_018",
+    "requires": [
+      "panda",
+      "puppy",
+      "bunny"
+    ],
+    "rewardCoins": 524,
+    "rewardXP": 38
+  },
+  {
+    "id": "order_019",
+    "requires": [
+      "dragon",
+      "panda",
+      "cat"
+    ],
+    "rewardCoins": 542,
+    "rewardXP": 39
+  },
+  {
+    "id": "order_020",
+    "requires": [
+      "panda",
+      "bunny",
+      "turtle"
+    ],
+    "rewardCoins": 560,
+    "rewardXP": 40
+  },
+  {
+    "id": "order_021",
+    "requires": [
+      "fox",
+      "panda",
+      "puppy"
+    ],
+    "rewardCoins": 578,
+    "rewardXP": 41
+  },
+  {
+    "id": "order_022",
+    "requires": [
+      "turtle",
+      "dragon",
+      "cat"
+    ],
+    "rewardCoins": 596,
+    "rewardXP": 42
+  },
+  {
+    "id": "order_023",
+    "requires": [
+      "panda",
+      "cat",
+      "fox"
+    ],
+    "rewardCoins": 614,
+    "rewardXP": 43
+  },
+  {
+    "id": "order_024",
+    "requires": [
+      "bunny",
+      "cat",
+      "turtle"
+    ],
+    "rewardCoins": 632,
+    "rewardXP": 44
+  },
+  {
+    "id": "order_025",
+    "requires": [
+      "dragon",
+      "puppy",
+      "unicorn"
+    ],
+    "rewardCoins": 650,
+    "rewardXP": 45
+  },
+  {
+    "id": "order_026",
+    "requires": [
+      "unicorn",
+      "turtle",
+      "bunny"
+    ],
+    "rewardCoins": 668,
+    "rewardXP": 46
+  },
+  {
+    "id": "order_027",
+    "requires": [
+      "unicorn",
+      "puppy",
+      "panda"
+    ],
+    "rewardCoins": 686,
+    "rewardXP": 47
+  },
+  {
+    "id": "order_028",
+    "requires": [
+      "cat",
+      "panda",
+      "puppy"
+    ],
+    "rewardCoins": 704,
+    "rewardXP": 48
+  },
+  {
+    "id": "order_029",
+    "requires": [
+      "dragon",
+      "turtle",
+      "puppy"
+    ],
+    "rewardCoins": 722,
+    "rewardXP": 49
+  },
+  {
+    "id": "order_030",
+    "requires": [
+      "turtle",
+      "bunny",
+      "puppy"
+    ],
+    "rewardCoins": 740,
+    "rewardXP": 50
+  },
+  {
+    "id": "order_031",
+    "requires": [
+      "puppy",
+      "panda",
+      "cat"
+    ],
+    "rewardCoins": 758,
+    "rewardXP": 51
+  },
+  {
+    "id": "order_032",
+    "requires": [
+      "turtle",
+      "fox",
+      "panda"
+    ],
+    "rewardCoins": 776,
+    "rewardXP": 52
+  },
+  {
+    "id": "order_033",
+    "requires": [
+      "cat",
+      "panda",
+      "dragon"
+    ],
+    "rewardCoins": 794,
+    "rewardXP": 53
+  },
+  {
+    "id": "order_034",
+    "requires": [
+      "cat",
+      "bunny",
+      "fox"
+    ],
+    "rewardCoins": 812,
+    "rewardXP": 54
+  },
+  {
+    "id": "order_035",
+    "requires": [
+      "dragon",
+      "bunny",
+      "puppy"
+    ],
+    "rewardCoins": 830,
+    "rewardXP": 55
+  },
+  {
+    "id": "order_036",
+    "requires": [
+      "unicorn",
+      "cat",
+      "turtle"
+    ],
+    "rewardCoins": 848,
+    "rewardXP": 56
+  },
+  {
+    "id": "order_037",
+    "requires": [
+      "fox",
+      "unicorn",
+      "turtle"
+    ],
+    "rewardCoins": 866,
+    "rewardXP": 57
+  },
+  {
+    "id": "order_038",
+    "requires": [
+      "dragon",
+      "puppy",
+      "cat"
+    ],
+    "rewardCoins": 884,
+    "rewardXP": 58
+  },
+  {
+    "id": "order_039",
+    "requires": [
+      "puppy",
+      "unicorn",
+      "dragon"
+    ],
+    "rewardCoins": 902,
+    "rewardXP": 59
+  },
+  {
+    "id": "order_040",
+    "requires": [
+      "puppy",
+      "fox",
+      "dragon"
+    ],
+    "rewardCoins": 920,
+    "rewardXP": 60
+  },
+  {
+    "id": "order_041",
+    "requires": [
+      "puppy",
+      "cat",
+      "fox"
+    ],
+    "rewardCoins": 938,
+    "rewardXP": 61
+  },
+  {
+    "id": "order_042",
+    "requires": [
+      "panda",
+      "fox",
+      "turtle"
+    ],
+    "rewardCoins": 956,
+    "rewardXP": 62
+  },
+  {
+    "id": "order_043",
+    "requires": [
+      "bunny",
+      "puppy",
+      "unicorn"
+    ],
+    "rewardCoins": 974,
+    "rewardXP": 63
+  },
+  {
+    "id": "order_044",
+    "requires": [
+      "cat",
+      "puppy",
+      "panda"
+    ],
+    "rewardCoins": 992,
+    "rewardXP": 64
+  },
+  {
+    "id": "order_045",
+    "requires": [
+      "unicorn",
+      "bunny",
+      "cat"
+    ],
+    "rewardCoins": 1010,
+    "rewardXP": 65
+  },
+  {
+    "id": "order_046",
+    "requires": [
+      "dragon",
+      "cat",
+      "puppy"
+    ],
+    "rewardCoins": 1028,
+    "rewardXP": 66
+  },
+  {
+    "id": "order_047",
+    "requires": [
+      "dragon",
+      "panda",
+      "unicorn"
+    ],
+    "rewardCoins": 1046,
+    "rewardXP": 67
+  },
+  {
+    "id": "order_048",
+    "requires": [
+      "dragon",
+      "fox",
+      "panda"
+    ],
+    "rewardCoins": 1064,
+    "rewardXP": 68
+  },
+  {
+    "id": "order_049",
+    "requires": [
+      "fox",
+      "bunny",
+      "unicorn"
+    ],
+    "rewardCoins": 1082,
+    "rewardXP": 69
+  },
+  {
+    "id": "order_050",
+    "requires": [
+      "turtle",
+      "fox",
+      "cat"
+    ],
+    "rewardCoins": 1100,
+    "rewardXP": 70
+  },
+  {
+    "id": "order_051",
+    "requires": [
+      "panda",
+      "puppy",
+      "turtle"
+    ],
+    "rewardCoins": 1118,
+    "rewardXP": 71
+  },
+  {
+    "id": "order_052",
+    "requires": [
+      "panda",
+      "cat",
+      "dragon"
+    ],
+    "rewardCoins": 1136,
+    "rewardXP": 72
+  },
+  {
+    "id": "order_053",
+    "requires": [
+      "dragon",
+      "puppy",
+      "panda"
+    ],
+    "rewardCoins": 1154,
+    "rewardXP": 73
+  },
+  {
+    "id": "order_054",
+    "requires": [
+      "panda",
+      "puppy",
+      "fox"
+    ],
+    "rewardCoins": 1172,
+    "rewardXP": 74
+  },
+  {
+    "id": "order_055",
+    "requires": [
+      "cat",
+      "fox",
+      "turtle"
+    ],
+    "rewardCoins": 1190,
+    "rewardXP": 75
+  },
+  {
+    "id": "order_056",
+    "requires": [
+      "cat",
+      "panda",
+      "puppy"
+    ],
+    "rewardCoins": 1208,
+    "rewardXP": 76
+  },
+  {
+    "id": "order_057",
+    "requires": [
+      "puppy",
+      "cat",
+      "bunny"
+    ],
+    "rewardCoins": 1226,
+    "rewardXP": 77
+  },
+  {
+    "id": "order_058",
+    "requires": [
+      "dragon",
+      "puppy",
+      "cat"
+    ],
+    "rewardCoins": 1244,
+    "rewardXP": 78
+  },
+  {
+    "id": "order_059",
+    "requires": [
+      "cat",
+      "puppy",
+      "fox"
+    ],
+    "rewardCoins": 1262,
+    "rewardXP": 79
+  },
+  {
+    "id": "order_060",
+    "requires": [
+      "dragon",
+      "fox",
+      "cat"
+    ],
+    "rewardCoins": 1280,
+    "rewardXP": 80
+  },
+  {
+    "id": "order_061",
+    "requires": [
+      "turtle",
+      "puppy",
+      "bunny"
+    ],
+    "rewardCoins": 1298,
+    "rewardXP": 81
+  },
+  {
+    "id": "order_062",
+    "requires": [
+      "puppy",
+      "bunny",
+      "fox"
+    ],
+    "rewardCoins": 1316,
+    "rewardXP": 82
+  },
+  {
+    "id": "order_063",
+    "requires": [
+      "unicorn",
+      "fox",
+      "dragon"
+    ],
+    "rewardCoins": 1334,
+    "rewardXP": 83
+  },
+  {
+    "id": "order_064",
+    "requires": [
+      "cat",
+      "turtle",
+      "unicorn"
+    ],
+    "rewardCoins": 1352,
+    "rewardXP": 84
+  },
+  {
+    "id": "order_065",
+    "requires": [
+      "turtle",
+      "unicorn",
+      "fox"
+    ],
+    "rewardCoins": 1370,
+    "rewardXP": 85
+  },
+  {
+    "id": "order_066",
+    "requires": [
+      "dragon",
+      "turtle",
+      "fox"
+    ],
+    "rewardCoins": 1388,
+    "rewardXP": 86
+  },
+  {
+    "id": "order_067",
+    "requires": [
+      "unicorn",
+      "turtle",
+      "fox"
+    ],
+    "rewardCoins": 1406,
+    "rewardXP": 87
+  },
+  {
+    "id": "order_068",
+    "requires": [
+      "fox",
+      "bunny",
+      "panda"
+    ],
+    "rewardCoins": 1424,
+    "rewardXP": 88
+  },
+  {
+    "id": "order_069",
+    "requires": [
+      "puppy",
+      "cat",
+      "dragon"
+    ],
+    "rewardCoins": 1442,
+    "rewardXP": 89
+  },
+  {
+    "id": "order_070",
+    "requires": [
+      "unicorn",
+      "bunny",
+      "turtle"
+    ],
+    "rewardCoins": 1460,
+    "rewardXP": 90
+  },
+  {
+    "id": "order_071",
+    "requires": [
+      "dragon",
+      "panda",
+      "fox"
+    ],
+    "rewardCoins": 1478,
+    "rewardXP": 91
+  },
+  {
+    "id": "order_072",
+    "requires": [
+      "unicorn",
+      "fox",
+      "turtle"
+    ],
+    "rewardCoins": 1496,
+    "rewardXP": 92
+  },
+  {
+    "id": "order_073",
+    "requires": [
+      "dragon",
+      "puppy",
+      "turtle"
+    ],
+    "rewardCoins": 1514,
+    "rewardXP": 93
+  },
+  {
+    "id": "order_074",
+    "requires": [
+      "dragon",
+      "puppy",
+      "cat"
+    ],
+    "rewardCoins": 1532,
+    "rewardXP": 94
+  },
+  {
+    "id": "order_075",
+    "requires": [
+      "cat",
+      "bunny",
+      "panda"
+    ],
+    "rewardCoins": 1550,
+    "rewardXP": 95
+  },
+  {
+    "id": "order_076",
+    "requires": [
+      "fox",
+      "turtle",
+      "dragon"
+    ],
+    "rewardCoins": 1568,
+    "rewardXP": 96
+  },
+  {
+    "id": "order_077",
+    "requires": [
+      "unicorn",
+      "cat",
+      "turtle"
+    ],
+    "rewardCoins": 1586,
+    "rewardXP": 97
+  },
+  {
+    "id": "order_078",
+    "requires": [
+      "fox",
+      "cat",
+      "bunny"
+    ],
+    "rewardCoins": 1604,
+    "rewardXP": 98
+  },
+  {
+    "id": "order_079",
+    "requires": [
+      "unicorn",
+      "puppy",
+      "cat"
+    ],
+    "rewardCoins": 1622,
+    "rewardXP": 99
+  },
+  {
+    "id": "order_080",
+    "requires": [
+      "cat",
+      "panda",
+      "dragon"
+    ],
+    "rewardCoins": 1640,
+    "rewardXP": 100
+  }
+]

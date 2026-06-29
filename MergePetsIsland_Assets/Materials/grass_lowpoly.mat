@@ -1,0 +1,4 @@
+%YAML 1.1
+MaterialName: grass_lowpoly
+BaseColor: #6FDB72
+Shader: Universal Render Pipeline/Lit

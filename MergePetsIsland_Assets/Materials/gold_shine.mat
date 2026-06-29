@@ -1,0 +1,4 @@
+%YAML 1.1
+MaterialName: gold_shine
+BaseColor: #FFD34A
+Shader: Universal Render Pipeline/Lit

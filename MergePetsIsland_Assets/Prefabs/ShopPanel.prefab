@@ -1,0 +1,4 @@
+%YAML 1.1
+# Unity prefab placeholder metadata for ShopPanel
+# Assign generated PNG sprites from Art/* folders in Unity.
+GameObject: ShopPanel

@@ -1,0 +1,1 @@
+No proprietary font files included. Recommended: Fredoka, Baloo 2, Nunito from Google Fonts. Import your licensed TTF/OTF here.

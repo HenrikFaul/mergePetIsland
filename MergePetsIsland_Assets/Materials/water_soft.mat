@@ -1,0 +1,4 @@
+%YAML 1.1
+MaterialName: water_soft
+BaseColor: #4FC3F7
+Shader: Universal Render Pipeline/Lit

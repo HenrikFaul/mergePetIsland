@@ -1,0 +1,322 @@
+[
+  {
+    "id": "bunny_lv1",
+    "displayName": "Bunny",
+    "level": 1,
+    "coinValue": 25,
+    "mergeXP": 5,
+    "sprite": "Art/Characters/pet_bunny_lv1_idle_512.png"
+  },
+  {
+    "id": "bunny_lv2",
+    "displayName": "Bunny",
+    "level": 2,
+    "coinValue": 100,
+    "mergeXP": 10,
+    "sprite": "Art/Characters/pet_bunny_lv2_idle_512.png"
+  },
+  {
+    "id": "bunny_lv3",
+    "displayName": "Bunny",
+    "level": 3,
+    "coinValue": 225,
+    "mergeXP": 15,
+    "sprite": "Art/Characters/pet_bunny_lv3_idle_512.png"
+  },
+  {
+    "id": "bunny_lv4",
+    "displayName": "Bunny",
+    "level": 4,
+    "coinValue": 400,
+    "mergeXP": 20,
+    "sprite": "Art/Characters/pet_bunny_lv4_idle_512.png"
+  },
+  {
+    "id": "bunny_lv5",
+    "displayName": "Bunny",
+    "level": 5,
+    "coinValue": 625,
+    "mergeXP": 25,
+    "sprite": "Art/Characters/pet_bunny_lv5_idle_512.png"
+  },
+  {
+    "id": "fox_lv1",
+    "displayName": "Fox",
+    "level": 1,
+    "coinValue": 25,
+    "mergeXP": 5,
+    "sprite": "Art/Characters/pet_fox_lv1_idle_512.png"
+  },
+  {
+    "id": "fox_lv2",
+    "displayName": "Fox",
+    "level": 2,
+    "coinValue": 100,
+    "mergeXP": 10,
+    "sprite": "Art/Characters/pet_fox_lv2_idle_512.png"
+  },
+  {
+    "id": "fox_lv3",
+    "displayName": "Fox",
+    "level": 3,
+    "coinValue": 225,
+    "mergeXP": 15,
+    "sprite": "Art/Characters/pet_fox_lv3_idle_512.png"
+  },
+  {
+    "id": "fox_lv4",
+    "displayName": "Fox",
+    "level": 4,
+    "coinValue": 400,
+    "mergeXP": 20,
+    "sprite": "Art/Characters/pet_fox_lv4_idle_512.png"
+  },
+  {
+    "id": "fox_lv5",
+    "displayName": "Fox",
+    "level": 5,
+    "coinValue": 625,
+    "mergeXP": 25,
+    "sprite": "Art/Characters/pet_fox_lv5_idle_512.png"
+  },
+  {
+    "id": "cat_lv1",
+    "displayName": "Cat",
+    "level": 1,
+    "coinValue": 25,
+    "mergeXP": 5,
+    "sprite": "Art/Characters/pet_cat_lv1_idle_512.png"
+  },
+  {
+    "id": "cat_lv2",
+    "displayName": "Cat",
+    "level": 2,
+    "coinValue": 100,
+    "mergeXP": 10,
+    "sprite": "Art/Characters/pet_cat_lv2_idle_512.png"
+  },
+  {
+    "id": "cat_lv3",
+    "displayName": "Cat",
+    "level": 3,
+    "coinValue": 225,
+    "mergeXP": 15,
+    "sprite": "Art/Characters/pet_cat_lv3_idle_512.png"
+  },
+  {
+    "id": "cat_lv4",
+    "displayName": "Cat",
+    "level": 4,
+    "coinValue": 400,
+    "mergeXP": 20,
+    "sprite": "Art/Characters/pet_cat_lv4_idle_512.png"
+  },
+  {
+    "id": "cat_lv5",
+    "displayName": "Cat",
+    "level": 5,
+    "coinValue": 625,
+    "mergeXP": 25,
+    "sprite": "Art/Characters/pet_cat_lv5_idle_512.png"
+  },
+  {
+    "id": "panda_lv1",
+    "displayName": "Panda",
+    "level": 1,
+    "coinValue": 25,
+    "mergeXP": 5,
+    "sprite": "Art/Characters/pet_panda_lv1_idle_512.png"
+  },
+  {
+    "id": "panda_lv2",
+    "displayName": "Panda",
+    "level": 2,
+    "coinValue": 100,
+    "mergeXP": 10,
+    "sprite": "Art/Characters/pet_panda_lv2_idle_512.png"
+  },
+  {
+    "id": "panda_lv3",
+    "displayName": "Panda",
+    "level": 3,
+    "coinValue": 225,
+    "mergeXP": 15,
+    "sprite": "Art/Characters/pet_panda_lv3_idle_512.png"
+  },
+  {
+    "id": "panda_lv4",
+    "displayName": "Panda",
+    "level": 4,
+    "coinValue": 400,
+    "mergeXP": 20,
+    "sprite": "Art/Characters/pet_panda_lv4_idle_512.png"
+  },
+  {
+    "id": "panda_lv5",
+    "displayName": "Panda",
+    "level": 5,
+    "coinValue": 625,
+    "mergeXP": 25,
+    "sprite": "Art/Characters/pet_panda_lv5_idle_512.png"
+  },
+  {
+    "id": "dragon_lv1",
+    "displayName": "Dragon",
+    "level": 1,
+    "coinValue": 25,
+    "mergeXP": 5,
+    "sprite": "Art/Characters/pet_dragon_lv1_idle_512.png"
+  },
+  {
+    "id": "dragon_lv2",
+    "displayName": "Dragon",
+    "level": 2,
+    "coinValue": 100,
+    "mergeXP": 10,
+    "sprite": "Art/Characters/pet_dragon_lv2_idle_512.png"
+  },
+  {
+    "id": "dragon_lv3",
+    "displayName": "Dragon",
+    "level": 3,
+    "coinValue": 225,
+    "mergeXP": 15,
+    "sprite": "Art/Characters/pet_dragon_lv3_idle_512.png"
+  },
+  {
+    "id": "dragon_lv4",
+    "displayName": "Dragon",
+    "level": 4,
+    "coinValue": 400,
+    "mergeXP": 20,
+    "sprite": "Art/Characters/pet_dragon_lv4_idle_512.png"
+  },
+  {
+    "id": "dragon_lv5",
+    "displayName": "Dragon",
+    "level": 5,
+    "coinValue": 625,
+    "mergeXP": 25,
+    "sprite": "Art/Characters/pet_dragon_lv5_idle_512.png"
+  },
+  {
+    "id": "puppy_lv1",
+    "displayName": "Puppy",
+    "level": 1,
+    "coinValue": 25,
+    "mergeXP": 5,
+    "sprite": "Art/Characters/pet_puppy_lv1_idle_512.png"
+  },
+  {
+    "id": "puppy_lv2",
+    "displayName": "Puppy",
+    "level": 2,
+    "coinValue": 100,
+    "mergeXP": 10,
+    "sprite": "Art/Characters/pet_puppy_lv2_idle_512.png"
+  },
+  {
+    "id": "puppy_lv3",
+    "displayName": "Puppy",
+    "level": 3,
+    "coinValue": 225,
+    "mergeXP": 15,
+    "sprite": "Art/Characters/pet_puppy_lv3_idle_512.png"
+  },
+  {
+    "id": "puppy_lv4",
+    "displayName": "Puppy",
+    "level": 4,
+    "coinValue": 400,
+    "mergeXP": 20,
+    "sprite": "Art/Characters/pet_puppy_lv4_idle_512.png"
+  },
+  {
+    "id": "puppy_lv5",
+    "displayName": "Puppy",
+    "level": 5,
+    "coinValue": 625,
+    "mergeXP": 25,
+    "sprite": "Art/Characters/pet_puppy_lv5_idle_512.png"
+  },
+  {
+    "id": "unicorn_lv1",
+    "displayName": "Unicorn",
+    "level": 1,
+    "coinValue": 25,
+    "mergeXP": 5,
+    "sprite": "Art/Characters/pet_unicorn_lv1_idle_512.png"
+  },
+  {
+    "id": "unicorn_lv2",
+    "displayName": "Unicorn",
+    "level": 2,
+    "coinValue": 100,
+    "mergeXP": 10,
+    "sprite": "Art/Characters/pet_unicorn_lv2_idle_512.png"
+  },
+  {
+    "id": "unicorn_lv3",
+    "displayName": "Unicorn",
+    "level": 3,
+    "coinValue": 225,
+    "mergeXP": 15,
+    "sprite": "Art/Characters/pet_unicorn_lv3_idle_512.png"
+  },
+  {
+    "id": "unicorn_lv4",
+    "displayName": "Unicorn",
+    "level": 4,
+    "coinValue": 400,
+    "mergeXP": 20,
+    "sprite": "Art/Characters/pet_unicorn_lv4_idle_512.png"
+  },
+  {
+    "id": "unicorn_lv5",
+    "displayName": "Unicorn",
+    "level": 5,
+    "coinValue": 625,
+    "mergeXP": 25,
+    "sprite": "Art/Characters/pet_unicorn_lv5_idle_512.png"
+  },
+  {
+    "id": "turtle_lv1",
+    "displayName": "Turtle",
+    "level": 1,
+    "coinValue": 25,
+    "mergeXP": 5,
+    "sprite": "Art/Characters/pet_turtle_lv1_idle_512.png"
+  },
+  {
+    "id": "turtle_lv2",
+    "displayName": "Turtle",
+    "level": 2,
+    "coinValue": 100,
+    "mergeXP": 10,
+    "sprite": "Art/Characters/pet_turtle_lv2_idle_512.png"
+  },
+  {
+    "id": "turtle_lv3",
+    "displayName": "Turtle",
+    "level": 3,
+    "coinValue": 225,
+    "mergeXP": 15,
+    "sprite": "Art/Characters/pet_turtle_lv3_idle_512.png"
+  },
+  {
+    "id": "turtle_lv4",
+    "displayName": "Turtle",
+    "level": 4,
+    "coinValue": 400,
+    "mergeXP": 20,
+    "sprite": "Art/Characters/pet_turtle_lv4_idle_512.png"
+  },
+  {
+    "id": "turtle_lv5",
+    "displayName": "Turtle",
+    "level": 5,
+    "coinValue": 625,
+    "mergeXP": 25,
+    "sprite": "Art/Characters/pet_turtle_lv5_idle_512.png"
+  }
+]

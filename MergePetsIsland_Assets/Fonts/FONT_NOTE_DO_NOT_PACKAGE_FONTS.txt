@@ -1,0 +1,1 @@
+No font binaries are included. Use TextMeshPro default or your licensed commercial font inside Unity. Text in PNGs was rendered from system fonts during generation only.

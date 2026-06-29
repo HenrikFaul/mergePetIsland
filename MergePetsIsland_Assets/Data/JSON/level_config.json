@@ -1,0 +1,6 @@
+{
+  "maxPlayerLevel": 200,
+  "xpCurve": "level^2*100",
+  "offlineEarningsHoursCap": 8,
+  "dailyRewardsDays": 7
+}

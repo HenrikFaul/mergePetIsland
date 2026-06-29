@@ -1,0 +1,4 @@
+%YAML 1.1
+MaterialName: ui_glow
+BaseColor: #52D7FF
+Shader: Universal Render Pipeline/Lit

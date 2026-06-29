@@ -1,0 +1,2850 @@
+[
+  {
+    "path": "SpriteSheets/pets_all_levels_sheet.png",
+    "bytes": 2042451
+  },
+  {
+    "path": "SpriteSheets/buildings_sheet.png",
+    "bytes": 272358
+  },
+  {
+    "path": "SpriteSheets/icons_sheet_128.png",
+    "bytes": 507320
+  },
+  {
+    "path": "SpriteSheets/vfx_particles_sheet_128.png",
+    "bytes": 420738
+  },
+  {
+    "path": "Fonts/FONT_NOTE_DO_NOT_PACKAGE_FONTS.txt",
+    "bytes": 170
+  },
+  {
+    "path": "Prefabs/PetMergeController.prefab",
+    "bytes": 160
+  },
+  {
+    "path": "Prefabs/IslandGrid.prefab",
+    "bytes": 144
+  },
+  {
+    "path": "Prefabs/OrderBoard.prefab",
+    "bytes": 144
+  },
+  {
+    "path": "Prefabs/RewardPopup.prefab",
+    "bytes": 146
+  },
+  {
+    "path": "Prefabs/ShopPanel.prefab",
+    "bytes": 142
+  },
+  {
+    "path": "Prefabs/BattlePassPanel.prefab",
+    "bytes": 154
+  },
+  {
+    "path": "Prefabs/DailyRewardPanel.prefab",
+    "bytes": 156
+  },
+  {
+    "path": "Prefabs/WorldMap.prefab",
+    "bytes": 140
+  },
+  {
+    "path": "Prefabs/AudioManager.prefab",
+    "bytes": 148
+  },
+  {
+    "path": "Prefabs/AdsManager.prefab",
+    "bytes": 144
+  },
+  {
+    "path": "Prefabs/AnalyticsManager.prefab",
+    "bytes": 156
+  },
+  {
+    "path": "Prefabs/LocalizationManager.prefab",
+    "bytes": 162
+  },
+  {
+    "path": "Materials/ui_glow.mat",
+    "bytes": 89
+  },
+  {
+    "path": "Materials/water_soft.mat",
+    "bytes": 92
+  },
+  {
+    "path": "Materials/grass_lowpoly.mat",
+    "bytes": 95
+  },
+  {
+    "path": "Materials/pet_soft.mat",
+    "bytes": 90
+  },
+  {
+    "path": "Materials/gold_shine.mat",
+    "bytes": 92
+  },
+  {
+    "path": "Materials/gem_crystal.mat",
+    "bytes": 93
+  },
+  {
+    "path": "Animations/pet_idle.anim",
+    "bytes": 107
+  },
+  {
+    "path": "Animations/pet_merge.anim",
+    "bytes": 108
+  },
+  {
+    "path": "Animations/coin_fly.anim",
+    "bytes": 107
+  },
+  {
+    "path": "Animations/popup_bounce.anim",
+    "bytes": 111
+  },
+  {
+    "path": "Animations/button_press.anim",
+    "bytes": 111
+  },
+  {
+    "path": "Animations/chest_open.anim",
+    "bytes": 109
+  },
+  {
+    "path": "Animations/island_unlock.anim",
+    "bytes": 112
+  },
+  {
+    "path": "Animations/reward_burst.anim",
+    "bytes": 111
+  },
+  {
+    "path": "Data/JSON/pets.json",
+    "bytes": 6986
+  },
+  {
+    "path": "Data/JSON/buildings.json",
+    "bytes": 1711
+  },
+  {
+    "path": "Data/JSON/economy_config.json",
+    "bytes": 391
+  },
+  {
+    "path": "Data/JSON/orders.json",
+    "bytes": 11544
+  },
+  {
+    "path": "Data/JSON/level_config.json",
+    "bytes": 112
+  },
+  {
+    "path": "Data/CSV/economy_balance.csv",
+    "bytes": 1967
+  },
+  {
+    "path": "Data/CSV/daily_rewards.csv",
+    "bytes": 126
+  },
+  {
+    "path": "Audio/Music/bgm_soft_island_loop.wav",
+    "bytes": 176444
+  },
+  {
+    "path": "Audio/SFX/sfx_merge.wav",
+    "bytes": 7982
+  },
+  {
+    "path": "Audio/SFX/sfx_levelup.wav",
+    "bytes": 19888
+  },
+  {
+    "path": "Audio/SFX/sfx_reward.wav",
+    "bytes": 15478
+  },
+  {
+    "path": "Audio/SFX/sfx_button.wav",
+    "bytes": 5336
+  },
+  {
+    "path": "Audio/SFX/sfx_buy.wav",
+    "bytes": 11068
+  },
+  {
+    "path": "Audio/SFX/sfx_chest.wav",
+    "bytes": 24298
+  },
+  {
+    "path": "Audio/SFX/sfx_pet_happy.wav",
+    "bytes": 8864
+  },
+  {
+    "path": "Audio/SFX/sfx_error.wav",
+    "bytes": 8864
+  },
+  {
+    "path": "Audio/SFX/sfx_coin.wav",
+    "bytes": 6218
+  },
+  {
+    "path": "Audio/SFX/sfx_gem.wav",
+    "bytes": 7100
+  },
+  {
+    "path": "Art/Characters/pet_bunny_lv1_idle_512.png",
+    "bytes": 67892
+  },
+  {
+    "path": "Art/Characters/pet_bunny_lv1_happy_512.png",
+    "bytes": 68213
+  },
+  {
+    "path": "Art/Characters/pet_bunny_lv1_merge_512.png",
+    "bytes": 106366
+  },
+  {
+    "path": "Art/Characters/pet_bunny_lv2_idle_512.png",
+    "bytes": 68634
+  },
+  {
+    "path": "Art/Characters/pet_bunny_lv2_happy_512.png",
+    "bytes": 68950
+  },
+  {
+    "path": "Art/Characters/pet_bunny_lv2_merge_512.png",
+    "bytes": 107133
+  },
+  {
+    "path": "Art/Characters/pet_bunny_lv3_idle_512.png",
+    "bytes": 68945
+  },
+  {
+    "path": "Art/Characters/pet_bunny_lv3_happy_512.png",
+    "bytes": 69259
+  },
+  {
+    "path": "Art/Characters/pet_bunny_lv3_merge_512.png",
+    "bytes": 107030
+  },
+  {
+    "path": "Art/Characters/pet_bunny_lv4_idle_512.png",
+    "bytes": 68497
+  },
+  {
+    "path": "Art/Characters/pet_bunny_lv4_happy_512.png",
+    "bytes": 68815
+  },
+  {
+    "path": "Art/Characters/pet_bunny_lv4_merge_512.png",
+    "bytes": 106159
+  },
+  {
+    "path": "Art/Characters/pet_bunny_lv5_idle_512.png",
+    "bytes": 68786
+  },
+  {
+    "path": "Art/Characters/pet_bunny_lv5_happy_512.png",
+    "bytes": 69094
+  },
+  {
+    "path": "Art/Characters/pet_bunny_lv5_merge_512.png",
+    "bytes": 105212
+  },
+  {
+    "path": "Art/Characters/pet_fox_lv1_idle_512.png",
+    "bytes": 60897
+  },
+  {
+    "path": "Art/Characters/pet_fox_lv1_happy_512.png",
+    "bytes": 62186
+  },
+  {
+    "path": "Art/Characters/pet_fox_lv1_merge_512.png",
+    "bytes": 103681
+  },
+  {
+    "path": "Art/Characters/pet_fox_lv2_idle_512.png",
+    "bytes": 61445
+  },
+  {
+    "path": "Art/Characters/pet_fox_lv2_happy_512.png",
+    "bytes": 62725
+  },
+  {
+    "path": "Art/Characters/pet_fox_lv2_merge_512.png",
+    "bytes": 105104
+  },
+  {
+    "path": "Art/Characters/pet_fox_lv3_idle_512.png",
+    "bytes": 61834
+  },
+  {
+    "path": "Art/Characters/pet_fox_lv3_happy_512.png",
+    "bytes": 63117
+  },
+  {
+    "path": "Art/Characters/pet_fox_lv3_merge_512.png",
+    "bytes": 105787
+  },
+  {
+    "path": "Art/Characters/pet_fox_lv4_idle_512.png",
+    "bytes": 61396
+  },
+  {
+    "path": "Art/Characters/pet_fox_lv4_happy_512.png",
+    "bytes": 62664
+  },
+  {
+    "path": "Art/Characters/pet_fox_lv4_merge_512.png",
+    "bytes": 106402
+  },
+  {
+    "path": "Art/Characters/pet_fox_lv5_idle_512.png",
+    "bytes": 61632
+  },
+  {
+    "path": "Art/Characters/pet_fox_lv5_happy_512.png",
+    "bytes": 62860
+  },
+  {
+    "path": "Art/Characters/pet_fox_lv5_merge_512.png",
+    "bytes": 107191
+  },
+  {
+    "path": "Art/Characters/pet_cat_lv1_idle_512.png",
+    "bytes": 64204
+  },
+  {
+    "path": "Art/Characters/pet_cat_lv1_happy_512.png",
+    "bytes": 65363
+  },
+  {
+    "path": "Art/Characters/pet_cat_lv1_merge_512.png",
+    "bytes": 104314
+  },
+  {
+    "path": "Art/Characters/pet_cat_lv2_idle_512.png",
+    "bytes": 64929
+  },
+  {
+    "path": "Art/Characters/pet_cat_lv2_happy_512.png",
+    "bytes": 66074
+  },
+  {
+    "path": "Art/Characters/pet_cat_lv2_merge_512.png",
+    "bytes": 106211
+  },
+  {
+    "path": "Art/Characters/pet_cat_lv3_idle_512.png",
+    "bytes": 65162
+  },
+  {
+    "path": "Art/Characters/pet_cat_lv3_happy_512.png",
+    "bytes": 66319
+  },
+  {
+    "path": "Art/Characters/pet_cat_lv3_merge_512.png",
+    "bytes": 107059
+  },
+  {
+    "path": "Art/Characters/pet_cat_lv4_idle_512.png",
+    "bytes": 64827
+  },
+  {
+    "path": "Art/Characters/pet_cat_lv4_happy_512.png",
+    "bytes": 65983
+  },
+  {
+    "path": "Art/Characters/pet_cat_lv4_merge_512.png",
+    "bytes": 107177
+  },
+  {
+    "path": "Art/Characters/pet_cat_lv5_idle_512.png",
+    "bytes": 65007
+  },
+  {
+    "path": "Art/Characters/pet_cat_lv5_happy_512.png",
+    "bytes": 66160
+  },
+  {
+    "path": "Art/Characters/pet_cat_lv5_merge_512.png",
+    "bytes": 107099
+  },
+  {
+    "path": "Art/Characters/pet_panda_lv1_idle_512.png",
+    "bytes": 59178
+  },
+  {
+    "path": "Art/Characters/pet_panda_lv1_happy_512.png",
+    "bytes": 59807
+  },
+  {
+    "path": "Art/Characters/pet_panda_lv1_merge_512.png",
+    "bytes": 91255
+  },
+  {
+    "path": "Art/Characters/pet_panda_lv2_idle_512.png",
+    "bytes": 60010
+  },
+  {
+    "path": "Art/Characters/pet_panda_lv2_happy_512.png",
+    "bytes": 60613
+  },
+  {
+    "path": "Art/Characters/pet_panda_lv2_merge_512.png",
+    "bytes": 89595
+  },
+  {
+    "path": "Art/Characters/pet_panda_lv3_idle_512.png",
+    "bytes": 60366
+  },
+  {
+    "path": "Art/Characters/pet_panda_lv3_happy_512.png",
+    "bytes": 60872
+  },
+  {
+    "path": "Art/Characters/pet_panda_lv3_merge_512.png",
+    "bytes": 89861
+  },
+  {
+    "path": "Art/Characters/pet_panda_lv4_idle_512.png",
+    "bytes": 60096
+  },
+  {
+    "path": "Art/Characters/pet_panda_lv4_happy_512.png",
+    "bytes": 60622
+  },
+  {
+    "path": "Art/Characters/pet_panda_lv4_merge_512.png",
+    "bytes": 90479
+  },
+  {
+    "path": "Art/Characters/pet_panda_lv5_idle_512.png",
+    "bytes": 60365
+  },
+  {
+    "path": "Art/Characters/pet_panda_lv5_happy_512.png",
+    "bytes": 60866
+  },
+  {
+    "path": "Art/Characters/pet_panda_lv5_merge_512.png",
+    "bytes": 91305
+  },
+  {
+    "path": "Art/Characters/pet_dragon_lv1_idle_512.png",
+    "bytes": 62570
+  },
+  {
+    "path": "Art/Characters/pet_dragon_lv1_happy_512.png",
+    "bytes": 64426
+  },
+  {
+    "path": "Art/Characters/pet_dragon_lv1_merge_512.png",
+    "bytes": 112979
+  },
+  {
+    "path": "Art/Characters/pet_dragon_lv2_idle_512.png",
+    "bytes": 63215
+  },
+  {
+    "path": "Art/Characters/pet_dragon_lv2_happy_512.png",
+    "bytes": 65059
+  },
+  {
+    "path": "Art/Characters/pet_dragon_lv2_merge_512.png",
+    "bytes": 114106
+  },
+  {
+    "path": "Art/Characters/pet_dragon_lv3_idle_512.png",
+    "bytes": 63531
+  },
+  {
+    "path": "Art/Characters/pet_dragon_lv3_happy_512.png",
+    "bytes": 65365
+  },
+  {
+    "path": "Art/Characters/pet_dragon_lv3_merge_512.png",
+    "bytes": 114250
+  },
+  {
+    "path": "Art/Characters/pet_dragon_lv4_idle_512.png",
+    "bytes": 63164
+  },
+  {
+    "path": "Art/Characters/pet_dragon_lv4_happy_512.png",
+    "bytes": 64920
+  },
+  {
+    "path": "Art/Characters/pet_dragon_lv4_merge_512.png",
+    "bytes": 112910
+  },
+  {
+    "path": "Art/Characters/pet_dragon_lv5_idle_512.png",
+    "bytes": 63345
+  },
+  {
+    "path": "Art/Characters/pet_dragon_lv5_happy_512.png",
+    "bytes": 65104
+  },
+  {
+    "path": "Art/Characters/pet_dragon_lv5_merge_512.png",
+    "bytes": 113619
+  },
+  {
+    "path": "Art/Characters/pet_puppy_lv1_idle_512.png",
+    "bytes": 66273
+  },
+  {
+    "path": "Art/Characters/pet_puppy_lv1_happy_512.png",
+    "bytes": 67331
+  },
+  {
+    "path": "Art/Characters/pet_puppy_lv1_merge_512.png",
+    "bytes": 108492
+  },
+  {
+    "path": "Art/Characters/pet_puppy_lv2_idle_512.png",
+    "bytes": 66866
+  },
+  {
+    "path": "Art/Characters/pet_puppy_lv2_happy_512.png",
+    "bytes": 67959
+  },
+  {
+    "path": "Art/Characters/pet_puppy_lv2_merge_512.png",
+    "bytes": 108997
+  },
+  {
+    "path": "Art/Characters/pet_puppy_lv3_idle_512.png",
+    "bytes": 67214
+  },
+  {
+    "path": "Art/Characters/pet_puppy_lv3_happy_512.png",
+    "bytes": 68252
+  },
+  {
+    "path": "Art/Characters/pet_puppy_lv3_merge_512.png",
+    "bytes": 109121
+  },
+  {
+    "path": "Art/Characters/pet_puppy_lv4_idle_512.png",
+    "bytes": 66818
+  },
+  {
+    "path": "Art/Characters/pet_puppy_lv4_happy_512.png",
+    "bytes": 67871
+  },
+  {
+    "path": "Art/Characters/pet_puppy_lv4_merge_512.png",
+    "bytes": 108682
+  },
+  {
+    "path": "Art/Characters/pet_puppy_lv5_idle_512.png",
+    "bytes": 67033
+  },
+  {
+    "path": "Art/Characters/pet_puppy_lv5_happy_512.png",
+    "bytes": 68080
+  },
+  {
+    "path": "Art/Characters/pet_puppy_lv5_merge_512.png",
+    "bytes": 107468
+  },
+  {
+    "path": "Art/Characters/pet_unicorn_lv1_idle_512.png",
+    "bytes": 71648
+  },
+  {
+    "path": "Art/Characters/pet_unicorn_lv1_happy_512.png",
+    "bytes": 72624
+  },
+  {
+    "path": "Art/Characters/pet_unicorn_lv1_merge_512.png",
+    "bytes": 109130
+  },
+  {
+    "path": "Art/Characters/pet_unicorn_lv2_idle_512.png",
+    "bytes": 72297
+  },
+  {
+    "path": "Art/Characters/pet_unicorn_lv2_happy_512.png",
+    "bytes": 73257
+  },
+  {
+    "path": "Art/Characters/pet_unicorn_lv2_merge_512.png",
+    "bytes": 108856
+  },
+  {
+    "path": "Art/Characters/pet_unicorn_lv3_idle_512.png",
+    "bytes": 72548
+  },
+  {
+    "path": "Art/Characters/pet_unicorn_lv3_happy_512.png",
+    "bytes": 73510
+  },
+  {
+    "path": "Art/Characters/pet_unicorn_lv3_merge_512.png",
+    "bytes": 108708
+  },
+  {
+    "path": "Art/Characters/pet_unicorn_lv4_idle_512.png",
+    "bytes": 72356
+  },
+  {
+    "path": "Art/Characters/pet_unicorn_lv4_happy_512.png",
+    "bytes": 73307
+  },
+  {
+    "path": "Art/Characters/pet_unicorn_lv4_merge_512.png",
+    "bytes": 109223
+  },
+  {
+    "path": "Art/Characters/pet_unicorn_lv5_idle_512.png",
+    "bytes": 72620
+  },
+  {
+    "path": "Art/Characters/pet_unicorn_lv5_happy_512.png",
+    "bytes": 73580
+  },
+  {
+    "path": "Art/Characters/pet_unicorn_lv5_merge_512.png",
+    "bytes": 109864
+  },
+  {
+    "path": "Art/Characters/pet_turtle_lv1_idle_512.png",
+    "bytes": 66809
+  },
+  {
+    "path": "Art/Characters/pet_turtle_lv1_happy_512.png",
+    "bytes": 67895
+  },
+  {
+    "path": "Art/Characters/pet_turtle_lv1_merge_512.png",
+    "bytes": 118889
+  },
+  {
+    "path": "Art/Characters/pet_turtle_lv2_idle_512.png",
+    "bytes": 67481
+  },
+  {
+    "path": "Art/Characters/pet_turtle_lv2_happy_512.png",
+    "bytes": 68567
+  },
+  {
+    "path": "Art/Characters/pet_turtle_lv2_merge_512.png",
+    "bytes": 119303
+  },
+  {
+    "path": "Art/Characters/pet_turtle_lv3_idle_512.png",
+    "bytes": 67777
+  },
+  {
+    "path": "Art/Characters/pet_turtle_lv3_happy_512.png",
+    "bytes": 68865
+  },
+  {
+    "path": "Art/Characters/pet_turtle_lv3_merge_512.png",
+    "bytes": 119295
+  },
+  {
+    "path": "Art/Characters/pet_turtle_lv4_idle_512.png",
+    "bytes": 67466
+  },
+  {
+    "path": "Art/Characters/pet_turtle_lv4_happy_512.png",
+    "bytes": 68544
+  },
+  {
+    "path": "Art/Characters/pet_turtle_lv4_merge_512.png",
+    "bytes": 118174
+  },
+  {
+    "path": "Art/Characters/pet_turtle_lv5_idle_512.png",
+    "bytes": 67661
+  },
+  {
+    "path": "Art/Characters/pet_turtle_lv5_happy_512.png",
+    "bytes": 68739
+  },
+  {
+    "path": "Art/Characters/pet_turtle_lv5_merge_512.png",
+    "bytes": 118357
+  },
+  {
+    "path": "Art/Buildings/building_cottage_lv1_512.png",
+    "bytes": 16749
+  },
+  {
+    "path": "Art/Buildings/building_cottage_lv2_512.png",
+    "bytes": 17195
+  },
+  {
+    "path": "Art/Buildings/building_cottage_lv3_512.png",
+    "bytes": 17250
+  },
+  {
+    "path": "Art/Buildings/building_fountain_lv1_512.png",
+    "bytes": 16521
+  },
+  {
+    "path": "Art/Buildings/building_fountain_lv2_512.png",
+    "bytes": 16986
+  },
+  {
+    "path": "Art/Buildings/building_fountain_lv3_512.png",
+    "bytes": 17003
+  },
+  {
+    "path": "Art/Buildings/building_bakery_lv1_512.png",
+    "bytes": 16025
+  },
+  {
+    "path": "Art/Buildings/building_bakery_lv2_512.png",
+    "bytes": 16423
+  },
+  {
+    "path": "Art/Buildings/building_bakery_lv3_512.png",
+    "bytes": 16441
+  },
+  {
+    "path": "Art/Buildings/building_treehouse_lv1_512.png",
+    "bytes": 16196
+  },
+  {
+    "path": "Art/Buildings/building_treehouse_lv2_512.png",
+    "bytes": 16653
+  },
+  {
+    "path": "Art/Buildings/building_treehouse_lv3_512.png",
+    "bytes": 16694
+  },
+  {
+    "path": "Art/Buildings/building_market_lv1_512.png",
+    "bytes": 15721
+  },
+  {
+    "path": "Art/Buildings/building_market_lv2_512.png",
+    "bytes": 16143
+  },
+  {
+    "path": "Art/Buildings/building_market_lv3_512.png",
+    "bytes": 16159
+  },
+  {
+    "path": "Art/Buildings/building_tower_lv1_512.png",
+    "bytes": 15680
+  },
+  {
+    "path": "Art/Buildings/building_tower_lv2_512.png",
+    "bytes": 16163
+  },
+  {
+    "path": "Art/Buildings/building_tower_lv3_512.png",
+    "bytes": 16147
+  },
+  {
+    "path": "Art/Buildings/building_dock_lv1_512.png",
+    "bytes": 15397
+  },
+  {
+    "path": "Art/Buildings/building_dock_lv2_512.png",
+    "bytes": 15820
+  },
+  {
+    "path": "Art/Buildings/building_dock_lv3_512.png",
+    "bytes": 15859
+  },
+  {
+    "path": "Art/Buildings/building_garden_lv1_512.png",
+    "bytes": 15979
+  },
+  {
+    "path": "Art/Buildings/building_garden_lv2_512.png",
+    "bytes": 16404
+  },
+  {
+    "path": "Art/Buildings/building_garden_lv3_512.png",
+    "bytes": 16441
+  },
+  {
+    "path": "Art/Buildings/building_crystal_mine_lv1_512.png",
+    "bytes": 19024
+  },
+  {
+    "path": "Art/Buildings/building_crystal_mine_lv2_512.png",
+    "bytes": 19429
+  },
+  {
+    "path": "Art/Buildings/building_crystal_mine_lv3_512.png",
+    "bytes": 19463
+  },
+  {
+    "path": "Art/Buildings/building_workshop_lv1_512.png",
+    "bytes": 16979
+  },
+  {
+    "path": "Art/Buildings/building_workshop_lv2_512.png",
+    "bytes": 17371
+  },
+  {
+    "path": "Art/Buildings/building_workshop_lv3_512.png",
+    "bytes": 17410
+  },
+  {
+    "path": "Art/Buildings/building_pet_hospital_lv1_512.png",
+    "bytes": 17185
+  },
+  {
+    "path": "Art/Buildings/building_pet_hospital_lv2_512.png",
+    "bytes": 17635
+  },
+  {
+    "path": "Art/Buildings/building_pet_hospital_lv3_512.png",
+    "bytes": 17657
+  },
+  {
+    "path": "Art/Buildings/building_dragon_shrine_lv1_512.png",
+    "bytes": 18432
+  },
+  {
+    "path": "Art/Buildings/building_dragon_shrine_lv2_512.png",
+    "bytes": 18888
+  },
+  {
+    "path": "Art/Buildings/building_dragon_shrine_lv3_512.png",
+    "bytes": 18881
+  },
+  {
+    "path": "Art/Environment/env_grass_tile_01_256.png",
+    "bytes": 2091
+  },
+  {
+    "path": "Art/Environment/env_grass_tile_02_256.png",
+    "bytes": 2091
+  },
+  {
+    "path": "Art/Environment/env_grass_tile_03_256.png",
+    "bytes": 2091
+  },
+  {
+    "path": "Art/Environment/env_grass_tile_04_256.png",
+    "bytes": 2091
+  },
+  {
+    "path": "Art/Environment/env_grass_tile_05_256.png",
+    "bytes": 2091
+  },
+  {
+    "path": "Art/Environment/env_grass_tile_06_256.png",
+    "bytes": 2091
+  },
+  {
+    "path": "Art/Environment/env_grass_tile_07_256.png",
+    "bytes": 2091
+  },
+  {
+    "path": "Art/Environment/env_grass_tile_08_256.png",
+    "bytes": 2091
+  },
+  {
+    "path": "Art/Environment/env_sand_tile_01_256.png",
+    "bytes": 2091
+  },
+  {
+    "path": "Art/Environment/env_sand_tile_02_256.png",
+    "bytes": 2091
+  },
+  {
+    "path": "Art/Environment/env_sand_tile_03_256.png",
+    "bytes": 2091
+  },
+  {
+    "path": "Art/Environment/env_sand_tile_04_256.png",
+    "bytes": 2091
+  },
+  {
+    "path": "Art/Environment/env_sand_tile_05_256.png",
+    "bytes": 2091
+  },
+  {
+    "path": "Art/Environment/env_sand_tile_06_256.png",
+    "bytes": 2091
+  },
+  {
+    "path": "Art/Environment/env_sand_tile_07_256.png",
+    "bytes": 2091
+  },
+  {
+    "path": "Art/Environment/env_sand_tile_08_256.png",
+    "bytes": 2091
+  },
+  {
+    "path": "Art/Environment/env_water_tile_01_256.png",
+    "bytes": 2725
+  },
+  {
+    "path": "Art/Environment/env_water_tile_02_256.png",
+    "bytes": 2725
+  },
+  {
+    "path": "Art/Environment/env_water_tile_03_256.png",
+    "bytes": 2725
+  },
+  {
+    "path": "Art/Environment/env_water_tile_04_256.png",
+    "bytes": 2725
+  },
+  {
+    "path": "Art/Environment/env_water_tile_05_256.png",
+    "bytes": 2725
+  },
+  {
+    "path": "Art/Environment/env_water_tile_06_256.png",
+    "bytes": 2725
+  },
+  {
+    "path": "Art/Environment/env_water_tile_07_256.png",
+    "bytes": 2725
+  },
+  {
+    "path": "Art/Environment/env_water_tile_08_256.png",
+    "bytes": 2725
+  },
+  {
+    "path": "Art/Environment/env_stone_tile_01_256.png",
+    "bytes": 2074
+  },
+  {
+    "path": "Art/Environment/env_stone_tile_02_256.png",
+    "bytes": 2074
+  },
+  {
+    "path": "Art/Environment/env_stone_tile_03_256.png",
+    "bytes": 2074
+  },
+  {
+    "path": "Art/Environment/env_stone_tile_04_256.png",
+    "bytes": 2074
+  },
+  {
+    "path": "Art/Environment/env_stone_tile_05_256.png",
+    "bytes": 2074
+  },
+  {
+    "path": "Art/Environment/env_stone_tile_06_256.png",
+    "bytes": 2074
+  },
+  {
+    "path": "Art/Environment/env_stone_tile_07_256.png",
+    "bytes": 2074
+  },
+  {
+    "path": "Art/Environment/env_stone_tile_08_256.png",
+    "bytes": 2074
+  },
+  {
+    "path": "Art/Environment/env_flower_patch_01_256.png",
+    "bytes": 2683
+  },
+  {
+    "path": "Art/Environment/env_flower_patch_02_256.png",
+    "bytes": 2682
+  },
+  {
+    "path": "Art/Environment/env_flower_patch_03_256.png",
+    "bytes": 2669
+  },
+  {
+    "path": "Art/Environment/env_flower_patch_04_256.png",
+    "bytes": 2603
+  },
+  {
+    "path": "Art/Environment/env_flower_patch_05_256.png",
+    "bytes": 2632
+  },
+  {
+    "path": "Art/Environment/env_flower_patch_06_256.png",
+    "bytes": 2693
+  },
+  {
+    "path": "Art/Environment/env_flower_patch_07_256.png",
+    "bytes": 2638
+  },
+  {
+    "path": "Art/Environment/env_flower_patch_08_256.png",
+    "bytes": 2698
+  },
+  {
+    "path": "Art/Environment/env_wood_bridge_01_256.png",
+    "bytes": 2071
+  },
+  {
+    "path": "Art/Environment/env_wood_bridge_02_256.png",
+    "bytes": 2071
+  },
+  {
+    "path": "Art/Environment/env_wood_bridge_03_256.png",
+    "bytes": 2071
+  },
+  {
+    "path": "Art/Environment/env_wood_bridge_04_256.png",
+    "bytes": 2071
+  },
+  {
+    "path": "Art/Environment/env_wood_bridge_05_256.png",
+    "bytes": 2071
+  },
+  {
+    "path": "Art/Environment/env_wood_bridge_06_256.png",
+    "bytes": 2071
+  },
+  {
+    "path": "Art/Environment/env_wood_bridge_07_256.png",
+    "bytes": 2071
+  },
+  {
+    "path": "Art/Environment/env_wood_bridge_08_256.png",
+    "bytes": 2071
+  },
+  {
+    "path": "Art/Environment/prop_tree_oak_01_256.png",
+    "bytes": 2411
+  },
+  {
+    "path": "Art/Environment/prop_tree_oak_02_256.png",
+    "bytes": 2411
+  },
+  {
+    "path": "Art/Environment/prop_tree_oak_03_256.png",
+    "bytes": 2407
+  },
+  {
+    "path": "Art/Environment/prop_tree_oak_04_256.png",
+    "bytes": 2410
+  },
+  {
+    "path": "Art/Environment/prop_tree_palm_01_256.png",
+    "bytes": 2411
+  },
+  {
+    "path": "Art/Environment/prop_tree_palm_02_256.png",
+    "bytes": 2411
+  },
+  {
+    "path": "Art/Environment/prop_tree_palm_03_256.png",
+    "bytes": 2407
+  },
+  {
+    "path": "Art/Environment/prop_tree_palm_04_256.png",
+    "bytes": 2410
+  },
+  {
+    "path": "Art/Environment/prop_rock_small_01_256.png",
+    "bytes": 1859
+  },
+  {
+    "path": "Art/Environment/prop_rock_small_02_256.png",
+    "bytes": 1859
+  },
+  {
+    "path": "Art/Environment/prop_rock_small_03_256.png",
+    "bytes": 1859
+  },
+  {
+    "path": "Art/Environment/prop_rock_small_04_256.png",
+    "bytes": 1859
+  },
+  {
+    "path": "Art/Environment/prop_rock_big_01_256.png",
+    "bytes": 1859
+  },
+  {
+    "path": "Art/Environment/prop_rock_big_02_256.png",
+    "bytes": 1859
+  },
+  {
+    "path": "Art/Environment/prop_rock_big_03_256.png",
+    "bytes": 1859
+  },
+  {
+    "path": "Art/Environment/prop_rock_big_04_256.png",
+    "bytes": 1859
+  },
+  {
+    "path": "Art/Environment/prop_bush_01_256.png",
+    "bytes": 2294
+  },
+  {
+    "path": "Art/Environment/prop_bush_02_256.png",
+    "bytes": 2294
+  },
+  {
+    "path": "Art/Environment/prop_bush_03_256.png",
+    "bytes": 2294
+  },
+  {
+    "path": "Art/Environment/prop_bush_04_256.png",
+    "bytes": 2294
+  },
+  {
+    "path": "Art/Environment/prop_mushroom_01_256.png",
+    "bytes": 2246
+  },
+  {
+    "path": "Art/Environment/prop_mushroom_02_256.png",
+    "bytes": 2246
+  },
+  {
+    "path": "Art/Environment/prop_mushroom_03_256.png",
+    "bytes": 2246
+  },
+  {
+    "path": "Art/Environment/prop_mushroom_04_256.png",
+    "bytes": 2246
+  },
+  {
+    "path": "Art/Environment/prop_flower_red_01_256.png",
+    "bytes": 1289
+  },
+  {
+    "path": "Art/Environment/prop_flower_red_02_256.png",
+    "bytes": 1289
+  },
+  {
+    "path": "Art/Environment/prop_flower_red_03_256.png",
+    "bytes": 1289
+  },
+  {
+    "path": "Art/Environment/prop_flower_red_04_256.png",
+    "bytes": 1289
+  },
+  {
+    "path": "Art/Environment/prop_flower_blue_01_256.png",
+    "bytes": 1289
+  },
+  {
+    "path": "Art/Environment/prop_flower_blue_02_256.png",
+    "bytes": 1289
+  },
+  {
+    "path": "Art/Environment/prop_flower_blue_03_256.png",
+    "bytes": 1289
+  },
+  {
+    "path": "Art/Environment/prop_flower_blue_04_256.png",
+    "bytes": 1289
+  },
+  {
+    "path": "Art/Environment/prop_crate_01_256.png",
+    "bytes": 2797
+  },
+  {
+    "path": "Art/Environment/prop_crate_02_256.png",
+    "bytes": 2797
+  },
+  {
+    "path": "Art/Environment/prop_crate_03_256.png",
+    "bytes": 2797
+  },
+  {
+    "path": "Art/Environment/prop_crate_04_256.png",
+    "bytes": 2797
+  },
+  {
+    "path": "Art/Environment/prop_barrel_01_256.png",
+    "bytes": 2294
+  },
+  {
+    "path": "Art/Environment/prop_barrel_02_256.png",
+    "bytes": 2294
+  },
+  {
+    "path": "Art/Environment/prop_barrel_03_256.png",
+    "bytes": 2294
+  },
+  {
+    "path": "Art/Environment/prop_barrel_04_256.png",
+    "bytes": 2294
+  },
+  {
+    "path": "Art/Environment/prop_signpost_01_256.png",
+    "bytes": 3069
+  },
+  {
+    "path": "Art/Environment/prop_signpost_02_256.png",
+    "bytes": 3069
+  },
+  {
+    "path": "Art/Environment/prop_signpost_03_256.png",
+    "bytes": 3069
+  },
+  {
+    "path": "Art/Environment/prop_signpost_04_256.png",
+    "bytes": 3069
+  },
+  {
+    "path": "Art/Environment/prop_lamp_01_256.png",
+    "bytes": 1266
+  },
+  {
+    "path": "Art/Environment/prop_lamp_02_256.png",
+    "bytes": 1266
+  },
+  {
+    "path": "Art/Environment/prop_lamp_03_256.png",
+    "bytes": 1266
+  },
+  {
+    "path": "Art/Environment/prop_lamp_04_256.png",
+    "bytes": 1266
+  },
+  {
+    "path": "Art/Environment/prop_bench_01_256.png",
+    "bytes": 2294
+  },
+  {
+    "path": "Art/Environment/prop_bench_02_256.png",
+    "bytes": 2294
+  },
+  {
+    "path": "Art/Environment/prop_bench_03_256.png",
+    "bytes": 2294
+  },
+  {
+    "path": "Art/Environment/prop_bench_04_256.png",
+    "bytes": 2294
+  },
+  {
+    "path": "Art/Environment/prop_fence_01_256.png",
+    "bytes": 1289
+  },
+  {
+    "path": "Art/Environment/prop_fence_02_256.png",
+    "bytes": 1289
+  },
+  {
+    "path": "Art/Environment/prop_fence_03_256.png",
+    "bytes": 1289
+  },
+  {
+    "path": "Art/Environment/prop_fence_04_256.png",
+    "bytes": 1289
+  },
+  {
+    "path": "Art/Environment/prop_coin_pile_01_256.png",
+    "bytes": 1495
+  },
+  {
+    "path": "Art/Environment/prop_coin_pile_02_256.png",
+    "bytes": 1495
+  },
+  {
+    "path": "Art/Environment/prop_coin_pile_03_256.png",
+    "bytes": 1495
+  },
+  {
+    "path": "Art/Environment/prop_coin_pile_04_256.png",
+    "bytes": 1495
+  },
+  {
+    "path": "Art/Environment/prop_gem_cluster_01_256.png",
+    "bytes": 1788
+  },
+  {
+    "path": "Art/Environment/prop_gem_cluster_02_256.png",
+    "bytes": 1678
+  },
+  {
+    "path": "Art/Environment/prop_gem_cluster_03_256.png",
+    "bytes": 1615
+  },
+  {
+    "path": "Art/Environment/prop_gem_cluster_04_256.png",
+    "bytes": 1613
+  },
+  {
+    "path": "Art/Environment/prop_waterfall_01_256.png",
+    "bytes": 2960
+  },
+  {
+    "path": "Art/Environment/prop_waterfall_02_256.png",
+    "bytes": 2960
+  },
+  {
+    "path": "Art/Environment/prop_waterfall_03_256.png",
+    "bytes": 2960
+  },
+  {
+    "path": "Art/Environment/prop_waterfall_04_256.png",
+    "bytes": 2960
+  },
+  {
+    "path": "Art/Environment/prop_portal_01_256.png",
+    "bytes": 1978
+  },
+  {
+    "path": "Art/Environment/prop_portal_02_256.png",
+    "bytes": 1978
+  },
+  {
+    "path": "Art/Environment/prop_portal_03_256.png",
+    "bytes": 1978
+  },
+  {
+    "path": "Art/Environment/prop_portal_04_256.png",
+    "bytes": 1978
+  },
+  {
+    "path": "Art/UI/button_green_play_360x120.png",
+    "bytes": 5756
+  },
+  {
+    "path": "Art/UI/button_green_claim_360x120.png",
+    "bytes": 6606
+  },
+  {
+    "path": "Art/UI/button_green_shop_360x120.png",
+    "bytes": 7153
+  },
+  {
+    "path": "Art/UI/button_green_upgrade_360x120.png",
+    "bytes": 9192
+  },
+  {
+    "path": "Art/UI/button_green_build_360x120.png",
+    "bytes": 5704
+  },
+  {
+    "path": "Art/UI/button_green_refresh_360x120.png",
+    "bytes": 6092
+  },
+  {
+    "path": "Art/UI/button_green_next_360x120.png",
+    "bytes": 5650
+  },
+  {
+    "path": "Art/UI/button_green_ok_360x120.png",
+    "bytes": 5441
+  },
+  {
+    "path": "Art/UI/button_green_buy_360x120.png",
+    "bytes": 5540
+  },
+  {
+    "path": "Art/UI/button_green_go_360x120.png",
+    "bytes": 5991
+  },
+  {
+    "path": "Art/UI/button_blue_play_360x120.png",
+    "bytes": 5809
+  },
+  {
+    "path": "Art/UI/button_blue_claim_360x120.png",
+    "bytes": 6656
+  },
+  {
+    "path": "Art/UI/button_blue_shop_360x120.png",
+    "bytes": 7229
+  },
+  {
+    "path": "Art/UI/button_blue_upgrade_360x120.png",
+    "bytes": 9272
+  },
+  {
+    "path": "Art/UI/button_blue_build_360x120.png",
+    "bytes": 5763
+  },
+  {
+    "path": "Art/UI/button_blue_refresh_360x120.png",
+    "bytes": 6152
+  },
+  {
+    "path": "Art/UI/button_blue_next_360x120.png",
+    "bytes": 5696
+  },
+  {
+    "path": "Art/UI/button_blue_ok_360x120.png",
+    "bytes": 5476
+  },
+  {
+    "path": "Art/UI/button_blue_buy_360x120.png",
+    "bytes": 5594
+  },
+  {
+    "path": "Art/UI/button_blue_go_360x120.png",
+    "bytes": 5993
+  },
+  {
+    "path": "Art/UI/button_orange_play_360x120.png",
+    "bytes": 5788
+  },
+  {
+    "path": "Art/UI/button_orange_claim_360x120.png",
+    "bytes": 6642
+  },
+  {
+    "path": "Art/UI/button_orange_shop_360x120.png",
+    "bytes": 7212
+  },
+  {
+    "path": "Art/UI/button_orange_upgrade_360x120.png",
+    "bytes": 9265
+  },
+  {
+    "path": "Art/UI/button_orange_build_360x120.png",
+    "bytes": 5738
+  },
+  {
+    "path": "Art/UI/button_orange_refresh_360x120.png",
+    "bytes": 6119
+  },
+  {
+    "path": "Art/UI/button_orange_next_360x120.png",
+    "bytes": 5692
+  },
+  {
+    "path": "Art/UI/button_orange_ok_360x120.png",
+    "bytes": 5510
+  },
+  {
+    "path": "Art/UI/button_orange_buy_360x120.png",
+    "bytes": 5573
+  },
+  {
+    "path": "Art/UI/button_orange_go_360x120.png",
+    "bytes": 5994
+  },
+  {
+    "path": "Art/UI/button_purple_play_360x120.png",
+    "bytes": 5811
+  },
+  {
+    "path": "Art/UI/button_purple_claim_360x120.png",
+    "bytes": 6659
+  },
+  {
+    "path": "Art/UI/button_purple_shop_360x120.png",
+    "bytes": 7242
+  },
+  {
+    "path": "Art/UI/button_purple_upgrade_360x120.png",
+    "bytes": 9272
+  },
+  {
+    "path": "Art/UI/button_purple_build_360x120.png",
+    "bytes": 5761
+  },
+  {
+    "path": "Art/UI/button_purple_refresh_360x120.png",
+    "bytes": 6139
+  },
+  {
+    "path": "Art/UI/button_purple_next_360x120.png",
+    "bytes": 5696
+  },
+  {
+    "path": "Art/UI/button_purple_ok_360x120.png",
+    "bytes": 5520
+  },
+  {
+    "path": "Art/UI/button_purple_buy_360x120.png",
+    "bytes": 5594
+  },
+  {
+    "path": "Art/UI/button_purple_go_360x120.png",
+    "bytes": 6036
+  },
+  {
+    "path": "Art/UI/button_red_play_360x120.png",
+    "bytes": 5755
+  },
+  {
+    "path": "Art/UI/button_red_claim_360x120.png",
+    "bytes": 6588
+  },
+  {
+    "path": "Art/UI/button_red_shop_360x120.png",
+    "bytes": 7167
+  },
+  {
+    "path": "Art/UI/button_red_upgrade_360x120.png",
+    "bytes": 9123
+  },
+  {
+    "path": "Art/UI/button_red_build_360x120.png",
+    "bytes": 5706
+  },
+  {
+    "path": "Art/UI/button_red_refresh_360x120.png",
+    "bytes": 6068
+  },
+  {
+    "path": "Art/UI/button_red_next_360x120.png",
+    "bytes": 5646
+  },
+  {
+    "path": "Art/UI/button_red_ok_360x120.png",
+    "bytes": 5459
+  },
+  {
+    "path": "Art/UI/button_red_buy_360x120.png",
+    "bytes": 5548
+  },
+  {
+    "path": "Art/UI/button_red_go_360x120.png",
+    "bytes": 5985
+  },
+  {
+    "path": "Art/UI/button_gold_play_360x120.png",
+    "bytes": 5810
+  },
+  {
+    "path": "Art/UI/button_gold_claim_360x120.png",
+    "bytes": 6669
+  },
+  {
+    "path": "Art/UI/button_gold_shop_360x120.png",
+    "bytes": 7246
+  },
+  {
+    "path": "Art/UI/button_gold_upgrade_360x120.png",
+    "bytes": 9307
+  },
+  {
+    "path": "Art/UI/button_gold_build_360x120.png",
+    "bytes": 5764
+  },
+  {
+    "path": "Art/UI/button_gold_refresh_360x120.png",
+    "bytes": 6147
+  },
+  {
+    "path": "Art/UI/button_gold_next_360x120.png",
+    "bytes": 5720
+  },
+  {
+    "path": "Art/UI/button_gold_ok_360x120.png",
+    "bytes": 5512
+  },
+  {
+    "path": "Art/UI/button_gold_buy_360x120.png",
+    "bytes": 5606
+  },
+  {
+    "path": "Art/UI/button_gold_go_360x120.png",
+    "bytes": 5973
+  },
+  {
+    "path": "Art/UI/panel_small_512x384.png",
+    "bytes": 4297
+  },
+  {
+    "path": "Art/UI/panel_medium_768x512.png",
+    "bytes": 5407
+  },
+  {
+    "path": "Art/UI/panel_large_1024x768.png",
+    "bytes": 7656
+  },
+  {
+    "path": "Art/UI/popup_reward_900x640.png",
+    "bytes": 6321
+  },
+  {
+    "path": "Art/UI/shop_card_460x620.png",
+    "bytes": 4982
+  },
+  {
+    "path": "Art/UI/daily_card_420x560.png",
+    "bytes": 4756
+  },
+  {
+    "path": "Art/UI/battlepass_panel_1100x700.png",
+    "bytes": 7167
+  },
+  {
+    "path": "Art/UI/progress_bar_01_512x96.png",
+    "bytes": 791
+  },
+  {
+    "path": "Art/UI/progress_bar_02_512x96.png",
+    "bytes": 853
+  },
+  {
+    "path": "Art/UI/progress_bar_03_512x96.png",
+    "bytes": 866
+  },
+  {
+    "path": "Art/UI/progress_bar_04_512x96.png",
+    "bytes": 845
+  },
+  {
+    "path": "Art/UI/progress_bar_05_512x96.png",
+    "bytes": 843
+  },
+  {
+    "path": "Art/UI/progress_bar_06_512x96.png",
+    "bytes": 845
+  },
+  {
+    "path": "Art/UI/progress_bar_07_512x96.png",
+    "bytes": 842
+  },
+  {
+    "path": "Art/UI/progress_bar_08_512x96.png",
+    "bytes": 839
+  },
+  {
+    "path": "Art/UI/progress_bar_09_512x96.png",
+    "bytes": 852
+  },
+  {
+    "path": "Art/UI/progress_bar_10_512x96.png",
+    "bytes": 846
+  },
+  {
+    "path": "Art/UI/progress_bar_11_512x96.png",
+    "bytes": 841
+  },
+  {
+    "path": "Art/UI/progress_bar_12_512x96.png",
+    "bytes": 847
+  },
+  {
+    "path": "Art/UI/progress_bar_13_512x96.png",
+    "bytes": 849
+  },
+  {
+    "path": "Art/UI/progress_bar_14_512x96.png",
+    "bytes": 844
+  },
+  {
+    "path": "Art/UI/progress_bar_15_512x96.png",
+    "bytes": 850
+  },
+  {
+    "path": "Art/UI/progress_bar_16_512x96.png",
+    "bytes": 849
+  },
+  {
+    "path": "Art/UI/progress_bar_17_512x96.png",
+    "bytes": 849
+  },
+  {
+    "path": "Art/UI/progress_bar_18_512x96.png",
+    "bytes": 845
+  },
+  {
+    "path": "Art/UI/progress_bar_19_512x96.png",
+    "bytes": 851
+  },
+  {
+    "path": "Art/UI/progress_bar_20_512x96.png",
+    "bytes": 842
+  },
+  {
+    "path": "Art/UI/progress_bar_21_512x96.png",
+    "bytes": 837
+  },
+  {
+    "path": "Art/UI/progress_bar_22_512x96.png",
+    "bytes": 862
+  },
+  {
+    "path": "Art/UI/progress_bar_23_512x96.png",
+    "bytes": 835
+  },
+  {
+    "path": "Art/UI/progress_bar_24_512x96.png",
+    "bytes": 826
+  },
+  {
+    "path": "Art/Icons/icon_coin_1_256.png",
+    "bytes": 27144
+  },
+  {
+    "path": "Art/Icons/icon_coin_2_256.png",
+    "bytes": 27089
+  },
+  {
+    "path": "Art/Icons/icon_coin_3_256.png",
+    "bytes": 26944
+  },
+  {
+    "path": "Art/Icons/icon_gem_1_256.png",
+    "bytes": 27375
+  },
+  {
+    "path": "Art/Icons/icon_gem_2_256.png",
+    "bytes": 27196
+  },
+  {
+    "path": "Art/Icons/icon_gem_3_256.png",
+    "bytes": 27282
+  },
+  {
+    "path": "Art/Icons/icon_star_1_256.png",
+    "bytes": 27844
+  },
+  {
+    "path": "Art/Icons/icon_star_2_256.png",
+    "bytes": 27802
+  },
+  {
+    "path": "Art/Icons/icon_star_3_256.png",
+    "bytes": 28034
+  },
+  {
+    "path": "Art/Icons/icon_heart_1_256.png",
+    "bytes": 22926
+  },
+  {
+    "path": "Art/Icons/icon_heart_2_256.png",
+    "bytes": 22930
+  },
+  {
+    "path": "Art/Icons/icon_heart_3_256.png",
+    "bytes": 22963
+  },
+  {
+    "path": "Art/Icons/icon_energy_1_256.png",
+    "bytes": 22971
+  },
+  {
+    "path": "Art/Icons/icon_energy_2_256.png",
+    "bytes": 23014
+  },
+  {
+    "path": "Art/Icons/icon_energy_3_256.png",
+    "bytes": 22992
+  },
+  {
+    "path": "Art/Icons/icon_chest_1_256.png",
+    "bytes": 27144
+  },
+  {
+    "path": "Art/Icons/icon_chest_2_256.png",
+    "bytes": 27089
+  },
+  {
+    "path": "Art/Icons/icon_chest_3_256.png",
+    "bytes": 26944
+  },
+  {
+    "path": "Art/Icons/icon_key_1_256.png",
+    "bytes": 25391
+  },
+  {
+    "path": "Art/Icons/icon_key_2_256.png",
+    "bytes": 25367
+  },
+  {
+    "path": "Art/Icons/icon_key_3_256.png",
+    "bytes": 25334
+  },
+  {
+    "path": "Art/Icons/icon_hammer_1_256.png",
+    "bytes": 22939
+  },
+  {
+    "path": "Art/Icons/icon_hammer_2_256.png",
+    "bytes": 22926
+  },
+  {
+    "path": "Art/Icons/icon_hammer_3_256.png",
+    "bytes": 22930
+  },
+  {
+    "path": "Art/Icons/icon_map_1_256.png",
+    "bytes": 24791
+  },
+  {
+    "path": "Art/Icons/icon_map_2_256.png",
+    "bytes": 24839
+  },
+  {
+    "path": "Art/Icons/icon_map_3_256.png",
+    "bytes": 24867
+  },
+  {
+    "path": "Art/Icons/icon_order_1_256.png",
+    "bytes": 27888
+  },
+  {
+    "path": "Art/Icons/icon_order_2_256.png",
+    "bytes": 27879
+  },
+  {
+    "path": "Art/Icons/icon_order_3_256.png",
+    "bytes": 27879
+  },
+  {
+    "path": "Art/Icons/icon_egg_1_256.png",
+    "bytes": 23014
+  },
+  {
+    "path": "Art/Icons/icon_egg_2_256.png",
+    "bytes": 22992
+  },
+  {
+    "path": "Art/Icons/icon_egg_3_256.png",
+    "bytes": 22979
+  },
+  {
+    "path": "Art/Icons/icon_paw_1_256.png",
+    "bytes": 24420
+  },
+  {
+    "path": "Art/Icons/icon_paw_2_256.png",
+    "bytes": 24338
+  },
+  {
+    "path": "Art/Icons/icon_paw_3_256.png",
+    "bytes": 24330
+  },
+  {
+    "path": "Art/Icons/icon_gift_1_256.png",
+    "bytes": 27196
+  },
+  {
+    "path": "Art/Icons/icon_gift_2_256.png",
+    "bytes": 27282
+  },
+  {
+    "path": "Art/Icons/icon_gift_3_256.png",
+    "bytes": 27389
+  },
+  {
+    "path": "Art/Icons/icon_calendar_1_256.png",
+    "bytes": 26937
+  },
+  {
+    "path": "Art/Icons/icon_calendar_2_256.png",
+    "bytes": 27116
+  },
+  {
+    "path": "Art/Icons/icon_calendar_3_256.png",
+    "bytes": 27144
+  },
+  {
+    "path": "Art/Icons/icon_trophy_1_256.png",
+    "bytes": 22602
+  },
+  {
+    "path": "Art/Icons/icon_trophy_2_256.png",
+    "bytes": 22634
+  },
+  {
+    "path": "Art/Icons/icon_trophy_3_256.png",
+    "bytes": 22620
+  },
+  {
+    "path": "Art/Icons/icon_crown_1_256.png",
+    "bytes": 27144
+  },
+  {
+    "path": "Art/Icons/icon_crown_2_256.png",
+    "bytes": 27089
+  },
+  {
+    "path": "Art/Icons/icon_crown_3_256.png",
+    "bytes": 26944
+  },
+  {
+    "path": "Art/Icons/icon_settings_1_256.png",
+    "bytes": 28011
+  },
+  {
+    "path": "Art/Icons/icon_settings_2_256.png",
+    "bytes": 27844
+  },
+  {
+    "path": "Art/Icons/icon_settings_3_256.png",
+    "bytes": 27802
+  },
+  {
+    "path": "Art/Icons/icon_music_1_256.png",
+    "bytes": 24813
+  },
+  {
+    "path": "Art/Icons/icon_music_2_256.png",
+    "bytes": 24791
+  },
+  {
+    "path": "Art/Icons/icon_music_3_256.png",
+    "bytes": 24839
+  },
+  {
+    "path": "Art/Icons/icon_sound_1_256.png",
+    "bytes": 27802
+  },
+  {
+    "path": "Art/Icons/icon_sound_2_256.png",
+    "bytes": 28034
+  },
+  {
+    "path": "Art/Icons/icon_sound_3_256.png",
+    "bytes": 28049
+  },
+  {
+    "path": "Art/Icons/icon_language_1_256.png",
+    "bytes": 22623
+  },
+  {
+    "path": "Art/Icons/icon_language_2_256.png",
+    "bytes": 22631
+  },
+  {
+    "path": "Art/Icons/icon_language_3_256.png",
+    "bytes": 22624
+  },
+  {
+    "path": "Art/Icons/icon_no_ads_1_256.png",
+    "bytes": 28743
+  },
+  {
+    "path": "Art/Icons/icon_no_ads_2_256.png",
+    "bytes": 28578
+  },
+  {
+    "path": "Art/Icons/icon_no_ads_3_256.png",
+    "bytes": 28536
+  },
+  {
+    "path": "Art/Icons/icon_booster_1_256.png",
+    "bytes": 25131
+  },
+  {
+    "path": "Art/Icons/icon_booster_2_256.png",
+    "bytes": 25036
+  },
+  {
+    "path": "Art/Icons/icon_booster_3_256.png",
+    "bytes": 25059
+  },
+  {
+    "path": "Art/Icons/icon_speed_1_256.png",
+    "bytes": 27844
+  },
+  {
+    "path": "Art/Icons/icon_speed_2_256.png",
+    "bytes": 27802
+  },
+  {
+    "path": "Art/Icons/icon_speed_3_256.png",
+    "bytes": 28034
+  },
+  {
+    "path": "Art/Icons/icon_magnet_1_256.png",
+    "bytes": 24791
+  },
+  {
+    "path": "Art/Icons/icon_magnet_2_256.png",
+    "bytes": 24839
+  },
+  {
+    "path": "Art/Icons/icon_magnet_3_256.png",
+    "bytes": 24867
+  },
+  {
+    "path": "Art/Icons/icon_rainbow_1_256.png",
+    "bytes": 25379
+  },
+  {
+    "path": "Art/Icons/icon_rainbow_2_256.png",
+    "bytes": 25337
+  },
+  {
+    "path": "Art/Icons/icon_rainbow_3_256.png",
+    "bytes": 25305
+  },
+  {
+    "path": "Art/Icons/icon_ticket_1_256.png",
+    "bytes": 22634
+  },
+  {
+    "path": "Art/Icons/icon_ticket_2_256.png",
+    "bytes": 22620
+  },
+  {
+    "path": "Art/Icons/icon_ticket_3_256.png",
+    "bytes": 22625
+  },
+  {
+    "path": "Art/Icons/icon_season_1_256.png",
+    "bytes": 28011
+  },
+  {
+    "path": "Art/Icons/icon_season_2_256.png",
+    "bytes": 27844
+  },
+  {
+    "path": "Art/Icons/icon_season_3_256.png",
+    "bytes": 27802
+  },
+  {
+    "path": "Art/Icons/icon_event_1_256.png",
+    "bytes": 22979
+  },
+  {
+    "path": "Art/Icons/icon_event_2_256.png",
+    "bytes": 22972
+  },
+  {
+    "path": "Art/Icons/icon_event_3_256.png",
+    "bytes": 22971
+  },
+  {
+    "path": "Art/Icons/icon_dragon_1_256.png",
+    "bytes": 25637
+  },
+  {
+    "path": "Art/Icons/icon_dragon_2_256.png",
+    "bytes": 25747
+  },
+  {
+    "path": "Art/Icons/icon_dragon_3_256.png",
+    "bytes": 25764
+  },
+  {
+    "path": "Art/Icons/icon_shop_1_256.png",
+    "bytes": 28034
+  },
+  {
+    "path": "Art/Icons/icon_shop_2_256.png",
+    "bytes": 28049
+  },
+  {
+    "path": "Art/Icons/icon_shop_3_256.png",
+    "bytes": 28011
+  },
+  {
+    "path": "Art/Icons/icon_home_1_256.png",
+    "bytes": 22963
+  },
+  {
+    "path": "Art/Icons/icon_home_2_256.png",
+    "bytes": 22954
+  },
+  {
+    "path": "Art/Icons/icon_home_3_256.png",
+    "bytes": 22939
+  },
+  {
+    "path": "Art/Icons/icon_friends_1_256.png",
+    "bytes": 22804
+  },
+  {
+    "path": "Art/Icons/icon_friends_2_256.png",
+    "bytes": 22802
+  },
+  {
+    "path": "Art/Icons/icon_friends_3_256.png",
+    "bytes": 22796
+  },
+  {
+    "path": "Art/Icons/icon_leaderboard_1_256.png",
+    "bytes": 22620
+  },
+  {
+    "path": "Art/Icons/icon_leaderboard_2_256.png",
+    "bytes": 22604
+  },
+  {
+    "path": "Art/Icons/icon_leaderboard_3_256.png",
+    "bytes": 22623
+  },
+  {
+    "path": "Art/Icons/icon_mission_1_256.png",
+    "bytes": 24791
+  },
+  {
+    "path": "Art/Icons/icon_mission_2_256.png",
+    "bytes": 24839
+  },
+  {
+    "path": "Art/Icons/icon_mission_3_256.png",
+    "bytes": 24867
+  },
+  {
+    "path": "Art/Icons/icon_bag_1_256.png",
+    "bytes": 25202
+  },
+  {
+    "path": "Art/Icons/icon_bag_2_256.png",
+    "bytes": 25224
+  },
+  {
+    "path": "Art/Icons/icon_bag_3_256.png",
+    "bytes": 25131
+  },
+  {
+    "path": "Art/Icons/icon_decor_1_256.png",
+    "bytes": 25764
+  },
+  {
+    "path": "Art/Icons/icon_decor_2_256.png",
+    "bytes": 25709
+  },
+  {
+    "path": "Art/Icons/icon_decor_3_256.png",
+    "bytes": 25598
+  },
+  {
+    "path": "Art/Icons/icon_plant_1_256.png",
+    "bytes": 24420
+  },
+  {
+    "path": "Art/Icons/icon_plant_2_256.png",
+    "bytes": 24338
+  },
+  {
+    "path": "Art/Icons/icon_plant_3_256.png",
+    "bytes": 24330
+  },
+  {
+    "path": "Art/Icons/icon_build_1_256.png",
+    "bytes": 25036
+  },
+  {
+    "path": "Art/Icons/icon_build_2_256.png",
+    "bytes": 25059
+  },
+  {
+    "path": "Art/Icons/icon_build_3_256.png",
+    "bytes": 25202
+  },
+  {
+    "path": "Art/Icons/icon_merge_1_256.png",
+    "bytes": 24791
+  },
+  {
+    "path": "Art/Icons/icon_merge_2_256.png",
+    "bytes": 24839
+  },
+  {
+    "path": "Art/Icons/icon_merge_3_256.png",
+    "bytes": 24867
+  },
+  {
+    "path": "Art/Icons/icon_levelup_1_256.png",
+    "bytes": 22623
+  },
+  {
+    "path": "Art/Icons/icon_levelup_2_256.png",
+    "bytes": 22631
+  },
+  {
+    "path": "Art/Icons/icon_levelup_3_256.png",
+    "bytes": 22624
+  },
+  {
+    "path": "Art/Icons/icon_xp_1_256.png",
+    "bytes": 27218
+  },
+  {
+    "path": "Art/Icons/icon_xp_2_256.png",
+    "bytes": 27171
+  },
+  {
+    "path": "Art/Icons/icon_xp_3_256.png",
+    "bytes": 27248
+  },
+  {
+    "path": "Art/Icons/icon_timer_1_256.png",
+    "bytes": 22620
+  },
+  {
+    "path": "Art/Icons/icon_timer_2_256.png",
+    "bytes": 22625
+  },
+  {
+    "path": "Art/Icons/icon_timer_3_256.png",
+    "bytes": 22570
+  },
+  {
+    "path": "Art/Icons/icon_refresh_1_256.png",
+    "bytes": 25259
+  },
+  {
+    "path": "Art/Icons/icon_refresh_2_256.png",
+    "bytes": 25236
+  },
+  {
+    "path": "Art/Icons/icon_refresh_3_256.png",
+    "bytes": 25379
+  },
+  {
+    "path": "Art/Icons/icon_lock_1_256.png",
+    "bytes": 22604
+  },
+  {
+    "path": "Art/Icons/icon_lock_2_256.png",
+    "bytes": 22623
+  },
+  {
+    "path": "Art/Icons/icon_lock_3_256.png",
+    "bytes": 22631
+  },
+  {
+    "path": "Art/Icons/icon_unlock_1_256.png",
+    "bytes": 24833
+  },
+  {
+    "path": "Art/Icons/icon_unlock_2_256.png",
+    "bytes": 24865
+  },
+  {
+    "path": "Art/Icons/icon_unlock_3_256.png",
+    "bytes": 24803
+  },
+  {
+    "path": "Art/Icons/icon_warning_1_256.png",
+    "bytes": 26370
+  },
+  {
+    "path": "Art/Icons/icon_warning_2_256.png",
+    "bytes": 26346
+  },
+  {
+    "path": "Art/Icons/icon_warning_3_256.png",
+    "bytes": 26283
+  },
+  {
+    "path": "Art/Icons/icon_check_1_256.png",
+    "bytes": 27089
+  },
+  {
+    "path": "Art/Icons/icon_check_2_256.png",
+    "bytes": 26944
+  },
+  {
+    "path": "Art/Icons/icon_check_3_256.png",
+    "bytes": 26937
+  },
+  {
+    "path": "Art/Icons/icon_close_1_256.png",
+    "bytes": 26944
+  },
+  {
+    "path": "Art/Icons/icon_close_2_256.png",
+    "bytes": 26937
+  },
+  {
+    "path": "Art/Icons/icon_close_3_256.png",
+    "bytes": 27116
+  },
+  {
+    "path": "Art/Icons/icon_plus_1_256.png",
+    "bytes": 24330
+  },
+  {
+    "path": "Art/Icons/icon_plus_2_256.png",
+    "bytes": 24444
+  },
+  {
+    "path": "Art/Icons/icon_plus_3_256.png",
+    "bytes": 24457
+  },
+  {
+    "path": "Art/Icons/icon_minus_1_256.png",
+    "bytes": 24839
+  },
+  {
+    "path": "Art/Icons/icon_minus_2_256.png",
+    "bytes": 24867
+  },
+  {
+    "path": "Art/Icons/icon_minus_3_256.png",
+    "bytes": 24848
+  },
+  {
+    "path": "Art/Effects/fx_sparkle_01_512.png",
+    "bytes": 3418
+  },
+  {
+    "path": "Art/Effects/fx_sparkle_02_512.png",
+    "bytes": 3651
+  },
+  {
+    "path": "Art/Effects/fx_sparkle_03_512.png",
+    "bytes": 3922
+  },
+  {
+    "path": "Art/Effects/fx_sparkle_04_512.png",
+    "bytes": 3860
+  },
+  {
+    "path": "Art/Effects/fx_sparkle_05_512.png",
+    "bytes": 3696
+  },
+  {
+    "path": "Art/Effects/fx_sparkle_06_512.png",
+    "bytes": 3643
+  },
+  {
+    "path": "Art/Effects/fx_sparkle_07_512.png",
+    "bytes": 3710
+  },
+  {
+    "path": "Art/Effects/fx_sparkle_08_512.png",
+    "bytes": 3732
+  },
+  {
+    "path": "Art/Effects/fx_sparkle_09_512.png",
+    "bytes": 3930
+  },
+  {
+    "path": "Art/Effects/fx_sparkle_10_512.png",
+    "bytes": 4001
+  },
+  {
+    "path": "Art/Effects/fx_sparkle_11_512.png",
+    "bytes": 4072
+  },
+  {
+    "path": "Art/Effects/fx_sparkle_12_512.png",
+    "bytes": 4442
+  },
+  {
+    "path": "Art/Effects/fx_merge_burst_01_512.png",
+    "bytes": 4017
+  },
+  {
+    "path": "Art/Effects/fx_merge_burst_02_512.png",
+    "bytes": 4821
+  },
+  {
+    "path": "Art/Effects/fx_merge_burst_03_512.png",
+    "bytes": 5205
+  },
+  {
+    "path": "Art/Effects/fx_merge_burst_04_512.png",
+    "bytes": 5797
+  },
+  {
+    "path": "Art/Effects/fx_merge_burst_05_512.png",
+    "bytes": 5973
+  },
+  {
+    "path": "Art/Effects/fx_merge_burst_06_512.png",
+    "bytes": 6253
+  },
+  {
+    "path": "Art/Effects/fx_merge_burst_07_512.png",
+    "bytes": 6601
+  },
+  {
+    "path": "Art/Effects/fx_merge_burst_08_512.png",
+    "bytes": 6841
+  },
+  {
+    "path": "Art/Effects/fx_merge_burst_09_512.png",
+    "bytes": 7572
+  },
+  {
+    "path": "Art/Effects/fx_merge_burst_10_512.png",
+    "bytes": 7477
+  },
+  {
+    "path": "Art/Effects/fx_merge_burst_11_512.png",
+    "bytes": 7738
+  },
+  {
+    "path": "Art/Effects/fx_merge_burst_12_512.png",
+    "bytes": 8080
+  },
+  {
+    "path": "Art/Effects/fx_level_up_01_512.png",
+    "bytes": 3939
+  },
+  {
+    "path": "Art/Effects/fx_level_up_02_512.png",
+    "bytes": 4721
+  },
+  {
+    "path": "Art/Effects/fx_level_up_03_512.png",
+    "bytes": 5409
+  },
+  {
+    "path": "Art/Effects/fx_level_up_04_512.png",
+    "bytes": 5633
+  },
+  {
+    "path": "Art/Effects/fx_level_up_05_512.png",
+    "bytes": 6068
+  },
+  {
+    "path": "Art/Effects/fx_level_up_06_512.png",
+    "bytes": 6357
+  },
+  {
+    "path": "Art/Effects/fx_level_up_07_512.png",
+    "bytes": 6447
+  },
+  {
+    "path": "Art/Effects/fx_level_up_08_512.png",
+    "bytes": 6782
+  },
+  {
+    "path": "Art/Effects/fx_level_up_09_512.png",
+    "bytes": 7111
+  },
+  {
+    "path": "Art/Effects/fx_level_up_10_512.png",
+    "bytes": 7698
+  },
+  {
+    "path": "Art/Effects/fx_level_up_11_512.png",
+    "bytes": 7846
+  },
+  {
+    "path": "Art/Effects/fx_level_up_12_512.png",
+    "bytes": 7933
+  },
+  {
+    "path": "Art/Effects/fx_coin_fly_01_512.png",
+    "bytes": 3415
+  },
+  {
+    "path": "Art/Effects/fx_coin_fly_02_512.png",
+    "bytes": 3421
+  },
+  {
+    "path": "Art/Effects/fx_coin_fly_03_512.png",
+    "bytes": 3470
+  },
+  {
+    "path": "Art/Effects/fx_coin_fly_04_512.png",
+    "bytes": 3749
+  },
+  {
+    "path": "Art/Effects/fx_coin_fly_05_512.png",
+    "bytes": 3978
+  },
+  {
+    "path": "Art/Effects/fx_coin_fly_06_512.png",
+    "bytes": 3888
+  },
+  {
+    "path": "Art/Effects/fx_coin_fly_07_512.png",
+    "bytes": 3760
+  },
+  {
+    "path": "Art/Effects/fx_coin_fly_08_512.png",
+    "bytes": 3735
+  },
+  {
+    "path": "Art/Effects/fx_coin_fly_09_512.png",
+    "bytes": 4123
+  },
+  {
+    "path": "Art/Effects/fx_coin_fly_10_512.png",
+    "bytes": 3864
+  },
+  {
+    "path": "Art/Effects/fx_coin_fly_11_512.png",
+    "bytes": 4135
+  },
+  {
+    "path": "Art/Effects/fx_coin_fly_12_512.png",
+    "bytes": 4181
+  },
+  {
+    "path": "Art/Effects/fx_gem_glow_01_512.png",
+    "bytes": 3196
+  },
+  {
+    "path": "Art/Effects/fx_gem_glow_02_512.png",
+    "bytes": 3571
+  },
+  {
+    "path": "Art/Effects/fx_gem_glow_03_512.png",
+    "bytes": 3794
+  },
+  {
+    "path": "Art/Effects/fx_gem_glow_04_512.png",
+    "bytes": 3820
+  },
+  {
+    "path": "Art/Effects/fx_gem_glow_05_512.png",
+    "bytes": 3904
+  },
+  {
+    "path": "Art/Effects/fx_gem_glow_06_512.png",
+    "bytes": 3880
+  },
+  {
+    "path": "Art/Effects/fx_gem_glow_07_512.png",
+    "bytes": 4024
+  },
+  {
+    "path": "Art/Effects/fx_gem_glow_08_512.png",
+    "bytes": 3879
+  },
+  {
+    "path": "Art/Effects/fx_gem_glow_09_512.png",
+    "bytes": 4099
+  },
+  {
+    "path": "Art/Effects/fx_gem_glow_10_512.png",
+    "bytes": 3955
+  },
+  {
+    "path": "Art/Effects/fx_gem_glow_11_512.png",
+    "bytes": 4098
+  },
+  {
+    "path": "Art/Effects/fx_gem_glow_12_512.png",
+    "bytes": 3943
+  },
+  {
+    "path": "Art/Effects/fx_chest_open_01_512.png",
+    "bytes": 3322
+  },
+  {
+    "path": "Art/Effects/fx_chest_open_02_512.png",
+    "bytes": 3528
+  },
+  {
+    "path": "Art/Effects/fx_chest_open_03_512.png",
+    "bytes": 3680
+  },
+  {
+    "path": "Art/Effects/fx_chest_open_04_512.png",
+    "bytes": 3625
+  },
+  {
+    "path": "Art/Effects/fx_chest_open_05_512.png",
+    "bytes": 3875
+  },
+  {
+    "path": "Art/Effects/fx_chest_open_06_512.png",
+    "bytes": 3917
+  },
+  {
+    "path": "Art/Effects/fx_chest_open_07_512.png",
+    "bytes": 3888
+  },
+  {
+    "path": "Art/Effects/fx_chest_open_08_512.png",
+    "bytes": 3886
+  },
+  {
+    "path": "Art/Effects/fx_chest_open_09_512.png",
+    "bytes": 4162
+  },
+  {
+    "path": "Art/Effects/fx_chest_open_10_512.png",
+    "bytes": 4195
+  },
+  {
+    "path": "Art/Effects/fx_chest_open_11_512.png",
+    "bytes": 4076
+  },
+  {
+    "path": "Art/Effects/fx_chest_open_12_512.png",
+    "bytes": 4055
+  },
+  {
+    "path": "Art/Effects/fx_magic_ring_01_512.png",
+    "bytes": 4018
+  },
+  {
+    "path": "Art/Effects/fx_magic_ring_02_512.png",
+    "bytes": 4701
+  },
+  {
+    "path": "Art/Effects/fx_magic_ring_03_512.png",
+    "bytes": 5221
+  },
+  {
+    "path": "Art/Effects/fx_magic_ring_04_512.png",
+    "bytes": 5576
+  },
+  {
+    "path": "Art/Effects/fx_magic_ring_05_512.png",
+    "bytes": 5983
+  },
+  {
+    "path": "Art/Effects/fx_magic_ring_06_512.png",
+    "bytes": 6021
+  },
+  {
+    "path": "Art/Effects/fx_magic_ring_07_512.png",
+    "bytes": 6624
+  },
+  {
+    "path": "Art/Effects/fx_magic_ring_08_512.png",
+    "bytes": 6980
+  },
+  {
+    "path": "Art/Effects/fx_magic_ring_09_512.png",
+    "bytes": 7395
+  },
+  {
+    "path": "Art/Effects/fx_magic_ring_10_512.png",
+    "bytes": 7724
+  },
+  {
+    "path": "Art/Effects/fx_magic_ring_11_512.png",
+    "bytes": 7780
+  },
+  {
+    "path": "Art/Effects/fx_magic_ring_12_512.png",
+    "bytes": 8224
+  },
+  {
+    "path": "Art/Effects/fx_dragon_fire_01_512.png",
+    "bytes": 4328
+  },
+  {
+    "path": "Art/Effects/fx_dragon_fire_02_512.png",
+    "bytes": 4418
+  },
+  {
+    "path": "Art/Effects/fx_dragon_fire_03_512.png",
+    "bytes": 4809
+  },
+  {
+    "path": "Art/Effects/fx_dragon_fire_04_512.png",
+    "bytes": 4697
+  },
+  {
+    "path": "Art/Effects/fx_dragon_fire_05_512.png",
+    "bytes": 4946
+  },
+  {
+    "path": "Art/Effects/fx_dragon_fire_06_512.png",
+    "bytes": 4978
+  },
+  {
+    "path": "Art/Effects/fx_dragon_fire_07_512.png",
+    "bytes": 5481
+  },
+  {
+    "path": "Art/Effects/fx_dragon_fire_08_512.png",
+    "bytes": 5490
+  },
+  {
+    "path": "Art/Effects/fx_dragon_fire_09_512.png",
+    "bytes": 5678
+  },
+  {
+    "path": "Art/Effects/fx_dragon_fire_10_512.png",
+    "bytes": 5583
+  },
+  {
+    "path": "Art/Effects/fx_dragon_fire_11_512.png",
+    "bytes": 5328
+  },
+  {
+    "path": "Art/Effects/fx_dragon_fire_12_512.png",
+    "bytes": 5602
+  },
+  {
+    "path": "Art/Effects/fx_heal_wave_01_512.png",
+    "bytes": 3261
+  },
+  {
+    "path": "Art/Effects/fx_heal_wave_02_512.png",
+    "bytes": 3473
+  },
+  {
+    "path": "Art/Effects/fx_heal_wave_03_512.png",
+    "bytes": 3608
+  },
+  {
+    "path": "Art/Effects/fx_heal_wave_04_512.png",
+    "bytes": 3731
+  },
+  {
+    "path": "Art/Effects/fx_heal_wave_05_512.png",
+    "bytes": 3811
+  },
+  {
+    "path": "Art/Effects/fx_heal_wave_06_512.png",
+    "bytes": 3760
+  },
+  {
+    "path": "Art/Effects/fx_heal_wave_07_512.png",
+    "bytes": 3792
+  },
+  {
+    "path": "Art/Effects/fx_heal_wave_08_512.png",
+    "bytes": 4053
+  },
+  {
+    "path": "Art/Effects/fx_heal_wave_09_512.png",
+    "bytes": 3933
+  },
+  {
+    "path": "Art/Effects/fx_heal_wave_10_512.png",
+    "bytes": 4013
+  },
+  {
+    "path": "Art/Effects/fx_heal_wave_11_512.png",
+    "bytes": 3982
+  },
+  {
+    "path": "Art/Effects/fx_heal_wave_12_512.png",
+    "bytes": 4151
+  },
+  {
+    "path": "Art/Effects/fx_confetti_01_512.png",
+    "bytes": 3593
+  },
+  {
+    "path": "Art/Effects/fx_confetti_02_512.png",
+    "bytes": 3384
+  },
+  {
+    "path": "Art/Effects/fx_confetti_03_512.png",
+    "bytes": 3584
+  },
+  {
+    "path": "Art/Effects/fx_confetti_04_512.png",
+    "bytes": 3614
+  },
+  {
+    "path": "Art/Effects/fx_confetti_05_512.png",
+    "bytes": 3568
+  },
+  {
+    "path": "Art/Effects/fx_confetti_06_512.png",
+    "bytes": 4045
+  },
+  {
+    "path": "Art/Effects/fx_confetti_07_512.png",
+    "bytes": 3967
+  },
+  {
+    "path": "Art/Effects/fx_confetti_08_512.png",
+    "bytes": 3851
+  },
+  {
+    "path": "Art/Effects/fx_confetti_09_512.png",
+    "bytes": 3872
+  },
+  {
+    "path": "Art/Effects/fx_confetti_10_512.png",
+    "bytes": 3910
+  },
+  {
+    "path": "Art/Effects/fx_confetti_11_512.png",
+    "bytes": 3827
+  },
+  {
+    "path": "Art/Effects/fx_confetti_12_512.png",
+    "bytes": 3947
+  },
+  {
+    "path": "Art/Backgrounds/bg_green_forest_1920x1080.png",
+    "bytes": 103655
+  },
+  {
+    "path": "Art/Backgrounds/bg_crystal_peaks_1920x1080.png",
+    "bytes": 131427
+  },
+  {
+    "path": "Art/Backgrounds/bg_sunset_bay_1920x1080.png",
+    "bytes": 156638
+  },
+  {
+    "path": "Art/Backgrounds/bg_volcano_festival_1920x1080.png",
+    "bytes": 123129
+  },
+  {
+    "path": "Art/Backgrounds/bg_winter_cove_1920x1080.png",
+    "bytes": 139177
+  },
+  {
+    "path": "Art/Backgrounds/bg_night_magic_1920x1080.png",
+    "bytes": 137012
+  },
+  {
+    "path": "Art/Backgrounds/bg_spring_meadow_1920x1080.png",
+    "bytes": 122609
+  },
+  {
+    "path": "Art/Backgrounds/bg_golden_ruins_1920x1080.png",
+    "bytes": 132472
+  },
+  {
+    "path": "Art/Logos/logo_merge_pets_island_horizontal_1024x512.png",
+    "bytes": 33296
+  },
+  {
+    "path": "Art/Logos/logo_merge_pets_island_stacked_1024x512.png",
+    "bytes": 33296
+  },
+  {
+    "path": "Art/Logos/logo_merge_pets_island_icon_1024x512.png",
+    "bytes": 33296
+  },
+  {
+    "path": "Art/Screens/screen_01_splash_720x1280.png",
+    "bytes": 100328
+  },
+  {
+    "path": "Art/Screens/screen_02_main_menu_720x1280.png",
+    "bytes": 117609
+  },
+  {
+    "path": "Art/Screens/screen_03_island_merge_720x1280.png",
+    "bytes": 93053
+  },
+  {
+    "path": "Art/Screens/screen_04_pet_evolution_720x1280.png",
+    "bytes": 116520
+  },
+  {
+    "path": "Art/Screens/screen_05_orders_720x1280.png",
+    "bytes": 92434
+  },
+  {
+    "path": "Art/Screens/screen_06_build_decorate_720x1280.png",
+    "bytes": 93614
+  },
+  {
+    "path": "Art/Screens/screen_07_daily_rewards_720x1280.png",
+    "bytes": 92281
+  },
+  {
+    "path": "Art/Screens/screen_08_events_720x1280.png",
+    "bytes": 87877
+  },
+  {
+    "path": "Art/Screens/screen_09_battle_pass_720x1280.png",
+    "bytes": 90982
+  },
+  {
+    "path": "Art/Screens/screen_10_shop_720x1280.png",
+    "bytes": 81933
+  },
+  {
+    "path": "Art/Screens/screen_11_world_map_720x1280.png",
+    "bytes": 118181
+  },
+  {
+    "path": "Art/Screens/screen_12_leaderboard_720x1280.png",
+    "bytes": 85464
+  },
+  {
+    "path": "Art/Screens/screen_13_settings_720x1280.png",
+    "bytes": 90969
+  },
+  {
+    "path": "Art/Screens/screen_14_collection_720x1280.png",
+    "bytes": 101603
+  },
+  {
+    "path": "Art/Screens/screen_15_monetization_flow_720x1280.png",
+    "bytes": 88782
+  }
+]
